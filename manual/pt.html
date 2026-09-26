@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="capturia-manual-version" content="2026-09-26">
+<title>Manual do utilizador do Capturia</title>
+<style>
+  :root {
+    --color-fondo: #f7f1e1;
+    --color-tarjeta: #ecdfc0;
+    --color-cabecera: #bc9963;
+    --color-cabecera-texto: #3d2b12;
+    --color-texto: #3d2b12;
+    --color-texto-suave: #6b5b3f;
+    --color-borde: #d8c79f;
+    --color-enlace: #6b4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-fondo: #1e1a14;
+      --color-tarjeta: #2a2419;
+      --color-cabecera: #8a6d45;
+      --color-cabecera-texto: #f7f1e1;
+      --color-texto: #f0e9d8;
+      --color-texto-suave: #c9bd9e;
+      --color-borde: #4a3f2c;
+      --color-enlace: #e0c48a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--color-cabecera);
+    color: var(--color-cabecera-texto);
+    padding: 28px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.5rem;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+  .tarjeta {
+    background: var(--color-tarjeta);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border: 1px solid var(--color-borde);
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: var(--color-texto);
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 16px 0 6px 0;
+    color: var(--color-texto);
+  }
+  p, li {
+    font-size: 0.92rem;
+    color: var(--color-texto);
+  }
+  ul {
+    margin: 6px 0;
+    padding-inline-start: 20px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  a {
+    color: var(--color-enlace);
+  }
+  .indice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .indice li {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  .nota {
+    font-size: 0.82rem;
+    color: var(--color-texto-suave);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--color-borde);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--color-texto-suave);
+  }
+
+  .idiomas { display:flex; flex-wrap:wrap; justify-content:center; gap:6px 12px; margin-top:10px; font-size:0.82rem; }
+  .idiomas a { color: var(--color-cabecera-texto); text-decoration:none; opacity:0.85; }
+  .idiomas a.activo { font-weight:700; opacity:1; text-decoration:underline; }
+  ol { margin: 6px 0; padding-inline-start: 22px; }
+  .tabla-scroll { overflow-x:auto; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎣 Manual do utilizador do Capturia</h1>
+  <p>Atualizado a 26 de setembro de 2026</p>
+  <nav class="idiomas"><a href="es.html" hreflang="es">Español</a> <a href="en.html" hreflang="en">English</a> <a href="fr.html" hreflang="fr">Français</a> <a href="it.html" hreflang="it">Italiano</a> <a href="pt.html" hreflang="pt" class="activo">Português</a> <a href="ar.html" hreflang="ar">العربية</a></nav>
+</header>
+
+<!-- Contenido del manual: la app lo descarga y muestra este <main> dentro de su propia pantalla
+     (con copia guardada para leerlo sin conexión). Generado a partir del manual en Claude Docs. -->
+<main id="contenido-manual">
+
+  <div class="tarjeta">
+    <h2 id="indice">Índice</h2>
+    <ul class="indice">
+      <li><a href="#bem-vindo">Bem-vindo</a></li>
+      <li><a href="#primeiros-passos">Primeiros passos</a></li>
+      <li><a href="#navegar-na-app">Navegar na app</a></li>
+      <li><a href="#pesqueiros">Pesqueiros</a></li>
+      <li><a href="#capturas">Capturas</a></li>
+      <li><a href="#zeros-e-grandes-fisgadas">Zeros e grandes fisgadas</a></li>
+      <li><a href="#calendario">Calendário</a></li>
+      <li><a href="#especies">Espécies</a></li>
+      <li><a href="#companheiros">Companheiros</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#definicoes">Definições</a></li>
+      <li><a href="#sobre-o-capturia">Sobre o Capturia</a></li>
+      <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+    </ul>
+  </div>
+
+  <div class="tarjeta">
+    <h2 id="bem-vindo">Bem-vindo</h2>
+    <p>O Capturia é o teu diário de pesca digital: regista os teus pesqueiros, as tuas capturas (com fotos, peso e as condições do dia) e também aqueles dias em que nada picou. Tudo fica guardado no teu telemóvel e, se quiseres, com cópia na nuvem. Com o tempo, torna-se o teu próprio histórico de pesca: que espécie pica melhor em que pesqueiro, com que maré, com que vento.</p>
+    <p>Este manual vai crescendo aos poucos, à medida que a app cresce.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="primeiros-passos">Primeiros passos</h2>
+    <ol>
+      <li>Escolhe o teu idioma (espanhol, inglês, francês, italiano, português ou árabe) e diz-nos se já tens conta ou és novo. Se já tens conta, passas diretamente para o início de sessão.</li>
+      <li>Se és novo, escolhe à mão a tua zona de pesca (continente, país e, em Espanha, comunidade autónoma), o tipo de água e o tema claro ou escuro.</li>
+      <li>Escolhe o teu nome de utilizador: a app verifica logo se está livre. Depois de fixado, já não pode ser alterado.</li>
+      <li>Regista-te com o teu email e palavra-passe, ou com a tua conta Google.</li>
+      <li>O teu catálogo começa com cinco espécies já carregadas: Dourada, Robalo, Lula, Polvo e Salmão.</li>
+      <li>Começas no plano Free. Quem se registar antes de 1 de novembro de 2026 recebe 2 meses de Premium de oferta. O teu plano está no menu do avatar &gt; Subscrição e plano.</li>
+    </ol>
+  </div>
+  <div class="tarjeta">
+    <h2 id="navegar-na-app">Navegar na app</h2>
+    <ul>
+      <li><strong>Ecrã Início</strong>: botões grandes para o que mais usas (adicionar captura, calendário, capturas, perfil, definições, manual, Sobre…). Os que o teu plano não inclui aparecem com cadeado.</li>
+      <li><strong>Barra inferior</strong>: Espécies, Pesqueiros, Capturas, Zeros, Calendário e Aleluia! (nova captura). O botão da secção onde estás fica marcado com um contorno mais escuro e o fundo mais claro.</li>
+      <li><strong>Menu lateral</strong> (☰): as tuas ligações, Ferramentas, Companheiros e Grupos, e Ajuda (manual e Sobre o Capturia). No canto superior direito tem um atalho para 🏠 Início.</li>
+      <li><strong>Menu do avatar</strong> (a tua foto, no canto superior direito): 🏠 Início, Meu perfil, Definições, Subscrição e plano, e Terminar sessão.</li>
+    </ul>
+  </div>
+  <div class="tarjeta">
+    <h2 id="pesqueiros">Pesqueiros</h2>
+    <p>Um pesqueiro é um sítio onde pescas: uma barragem, um troço de rio, uma praia. Em Pesqueiros, toca em <strong>+ Novo</strong> e preenche:</p>
+    <ul>
+      <li><strong>Nome</strong> e <strong>tipo de pesqueiro</strong> (barragem, rio, mar, etc.).</li>
+      <li><strong>Foto</strong>, opcional.</li>
+      <li><strong>Localização</strong>: podes usar a tua posição GPS atual.</li>
+      <li><strong>Visibilidade</strong>: público ou privado. Um pesqueiro público pode ser visto por quem receber uma captura tua feita lá; um privado, não.</li>
+    </ul>
+    <p>Cada pesqueiro mostra quantas capturas e quantos zeros tens registados nele. Toca no cartão para o ver só em leitura; o lápis edita-o e o caixote do lixo apaga-o. Um pesqueiro com capturas ou zeros registados não pode ser apagado enquanto não os tirares ou moveres. Com a <strong>lupa</strong>, ao lado de «Todos os pesqueiros», procuras um pesqueiro pelo nome enquanto escreves.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="capturas">Capturas</h2>
+    <p>Em Capturas, toca em <strong>+ Nova</strong> (ou Aleluia! na barra inferior) para registar um peixe. Podes adicionar:</p>
+    <ul>
+      <li><strong>Espécie</strong> e <strong>pesqueiro</strong> (obrigatórios) e <strong>peso</strong>.</li>
+      <li><strong>Fotos ou vídeo</strong> da captura.</li>
+      <li><strong>Captura múltipla</strong>: se apanhaste vários peixes de uma vez, regista-os como uma única entrada com a sua quantidade.</li>
+      <li><strong>Condições do dia</strong>: os dados meteorológicos (vento, chuva, nebulosidade e fase da lua) são recolhidos automaticamente com o botão do tempo, a partir do pesqueiro ou da tua localização; o resto anotas tu: maré, tipo de maré, transparência e cor da água, estado do mar, cana, carreto, isco ou amostra. Tudo é opcional, mas quanto mais preencheres, mais útil se torna o teu histórico com o tempo.</li>
+      <li><strong>Visibilidade</strong>: privada ou pública para os teus companheiros.</li>
+    </ul>
+    <p>Em Capturas podes filtrar por espécie ou pesqueiro e procurar com a <strong>lupa</strong> pelo nome da espécie. Com <strong>+ Filtros</strong> acedes a filtros avançados (datas, peso, condições concretas ou incluir as capturas públicas dos teus companheiros), disponíveis a partir do plano Premium. Também podes partilhar a imagem de uma captura com o botão Partilhar.</p>
+    <p>Toca num cartão para ver a captura só em leitura. As capturas que um companheiro te envia podem ser vistas e apagadas, mas não editadas nem reenviadas.</p>
+    <h3>Editar ou apagar uma captura</h3>
+    <p>Na lista, o lápis abre a captura para a editares e o caixote do lixo apaga-a. Ao apagar, a caixa <strong>«Apagar também na nuvem»</strong> (marcada por predefinição) decide se a tua cópia na nuvem também é apagada, e não só a do telemóvel. Se nesse momento não tiveres ligação, a app avisa-te e fá-lo sozinha assim que a recuperares ou voltares a abrir a app. O mesmo se aplica a Pesqueiros, Espécies, Zeros e Grandes fisgadas.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="zeros-e-grandes-fisgadas">Zeros e grandes fisgadas</h2>
+    <p>Nem tudo são capturas: em Zeros guardas também os dias em que nada picou. Um <strong>zero</strong> regista a data, o pesqueiro, as horas de pesca e as condições do dia, tal como uma captura mas sem peixe. Com o tempo, ajuda-te a saber que condições não funcionam em cada pesqueiro.</p>
+    <p>Uma <strong>grande fisgada</strong> é aquela que te escapou: sentiste o puxão ou a linha partiu, mas o peixe nunca chegou a sair. Podes anotar as espécies de que suspeitas e se a linha partiu. Ambos se registam no mesmo ecrã, com o interruptor de grande fisgada, e a lista filtra-se com <strong>Todos / Zeros / Fisgadas</strong>.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="calendario">Calendário</h2>
+    <p>O botão <strong>Calendário</strong> da barra inferior (entre Zeros e Aleluia!) abre uma vista mensal com um ponto de cor por cada dia em que registaste algo: capturas, zeros e grandes fisgadas. Toca num dia para ver o que anotaste e abrir esse registo só em leitura.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="especies">Espécies</h2>
+    <p>O ecrã Espécies mostra <strong>o teu catálogo</strong>: as espécies que tens no telemóvel (as cinco iniciais, as que adicionares do catálogo oficial e as que criares tu). Sincroniza com a tua cópia na nuvem à mão ou automaticamente, conforme as Definições. O <strong>catálogo oficial</strong> completo do Capturia, com tamanho mínimo indicativo, tem o seu próprio ecrã (a partir do plano Plus), de onde adicionas espécies ao teu.</p>
+    <p>Usa a <strong>lupa</strong>, ao lado de «Todas as espécies», para procurar pelo nome comum ou científico. Toca num cartão para a ver só em leitura. Ao apagar uma espécie aparece o mesmo aviso que em Pesqueiros e Capturas, com a opção de a apagar também da nuvem; não pode ser apagada se tiver capturas registadas.</p>
+    <p>Quantas espécies podes ter no teu catálogo depende do teu plano (ver Planos). Os nomes do catálogo oficial aparecem no teu idioma quando há tradução; as espécies que crias aparecem tal como as escreveste.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="companheiros">Companheiros</h2>
+    <p>A partir do plano Premium podes adicionar companheiros (menu lateral &gt; Os meus companheiros, procurando pelo nome de utilizador) e enviar-lhes, com o botão <strong>Enviar</strong> de cada registo, capturas com toda a informação (incluindo a meteorológica e do mar), pesqueiros, espécies e grandes fisgadas. Podem recebê-los os utilizadores Plus ou superior.</p>
+    <ul>
+      <li><strong>Quando recebes algo</strong>, a app avisa-te ao abri-la (ou logo, se já estiver aberta). Podes guardá-lo ou descartá-lo. Se já tiveres essa espécie ou esse pesqueiro, é reutilizado o teu em vez de o duplicar.</li>
+      <li><strong>Oculta-te</strong> da pesquisa pública em Meu perfil se quiseres usar o Capturia apenas como diário de pesca: ninguém te poderá encontrar para te adicionar.</li>
+      <li><strong>Remover</strong> (X): deixa de ser teu companheiro.</li>
+      <li><strong>Bloquear</strong> (cadeado, por baixo do X): além de o remover, deixa de poder adicionar-te ou enviar-te o que quer que seja. Os envios que ainda não tinha aceitado são anulados, e as capturas e grandes fisgadas que já tinha aceitado são apagadas da sua nuvem e do seu telemóvel da próxima vez que abrir a app. Se alguém te enviar algo que não queres, também o podes bloquear e denunciar a partir do próprio aviso.</li>
+      <li><strong>Desbloquear</strong>: no cartão expansível «Utilizadores bloqueados». Não volta a ser teu companheiro automaticamente e o que foi apagado ao bloquear não se recupera.</li>
+    </ul>
+    <h3>Grupos</h3>
+    <p>Os grupos são conversas entre pescadores. A partir do plano Plus podes procurar grupos públicos e entrar (até 2 públicos e 2 privados ao mesmo tempo); a partir do Premium podes criar grupos públicos ou privados (o olho ao lado de Privado/Público também muda a visibilidade) e convidar quem quiseres.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="planos">Planos</h2>
+    <p>O Capturia tem quatro planos. Estes são os seus principais limites:</p>
+    <div class="tabla-scroll"><table>
+      <tr><th>Plano</th><th>Pesqueiros e espécies</th><th>Capturas, zeros e grandes fisgadas</th><th>Fotos por captura</th><th>Nuvem</th></tr>
+      <tr><td>Free</td><td>5 de cada</td><td>10 de cada</td><td>1</td><td>Sem nuvem</td></tr>
+      <tr><td>Plus</td><td>100 de cada</td><td>300 de cada</td><td>3</td><td>500 MB</td></tr>
+      <tr><td>Premium</td><td>Sem limite</td><td>Sem limite</td><td>8 + vídeo</td><td>2 GB</td></tr>
+      <tr><td>Pro</td><td colspan="4">Em breve, só para profissionais</td></tr>
+    </table></div>
+    <p>O Plus acrescenta ainda grupos, catálogo oficial, fundos da app e cópia de segurança; o Premium acrescenta filtros avançados, enviar a companheiros, criar grupos e usar a tua própria foto de fundo. O teu plano e o detalhe de cada um estão no menu do avatar &gt; Subscrição e plano.</p>
+    <p>Sem ligação, a app respeita o teu plano até à data em que termina o que pagaste ou te ofereceram (com um máximo de 30 dias sem te ligares); assim que há rede, manda o que disser o servidor.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="definicoes">Definições</h2>
+    <p>A partir do menu do teu avatar entras nas Definições, onde podes mudar:</p>
+    <ul>
+      <li><strong>Idioma</strong> e <strong>tema</strong> (claro ou escuro) da app.</li>
+      <li><strong>Personalização de cores</strong>: cor do cabeçalho e da barra inferior, ícones da barra em branco ou preto (todos os planos) e cor dos cartões (a partir do Plus). «Repor cores originais» volta às de sempre.</li>
+      <li><strong>Fundo da app</strong>: fundos predefinidos ou uma cor (a partir do Plus), ou a tua própria foto da câmara ou da galeria (a partir do Premium). Os fundos predefinidos vêm do Pixabay.</li>
+      <li><strong>Envio automático</strong> para a nuvem (a partir do Plus). Se não o ativares, podes guardar e recuperar a tua cópia à mão no menu lateral &gt; Ferramentas ou no Início.</li>
+    </ul>
+  </div>
+  <div class="tarjeta">
+    <h2 id="sobre-o-capturia">Sobre o Capturia</h2>
+    <p>No menu lateral &gt; Ajuda &gt; 🧭 Sobre o Capturia (ou no botão Sobre do Início) encontras a versão instalada, as novidades, a política de privacidade, os créditos e licenças, e como nos escrever, avaliar a app ou partilhá-la com os teus amigos.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+    <p><strong>Perco os meus dados se apagar a app ou mudar de telemóvel?</strong> Não, desde que tenhas a tua cópia na nuvem: os teus dados guardam-se primeiro no telemóvel e, com a cópia de segurança, também na nuvem. Num telemóvel novo, inicia sessão e usa Recuperar dados (menu lateral &gt; Ferramentas ou Início).</p>
+    <p><strong>Se apagar uma captura que já está na nuvem, também é apagada lá?</strong> Sim, se deixares marcada a caixa «Apagar também na nuvem» ao confirmar.</p>
+    <p><strong>Posso usar o Capturia sem ligação?</strong> Sim, para registar e consultar os teus dados. A sincronização com a nuvem (envios, cópias e apagamentos pendentes) faz-se sozinha assim que recuperas a ligação.</p>
+  </div>
+
+</main>
+
+<footer>
+  <a href="../">Política de privacidade</a> · © 2026 Capturia
+</footer>
+
+</body>
+</html>

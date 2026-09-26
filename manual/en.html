@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="capturia-manual-version" content="2026-09-26">
+<title>Capturia user guide</title>
+<style>
+  :root {
+    --color-fondo: #f7f1e1;
+    --color-tarjeta: #ecdfc0;
+    --color-cabecera: #bc9963;
+    --color-cabecera-texto: #3d2b12;
+    --color-texto: #3d2b12;
+    --color-texto-suave: #6b5b3f;
+    --color-borde: #d8c79f;
+    --color-enlace: #6b4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-fondo: #1e1a14;
+      --color-tarjeta: #2a2419;
+      --color-cabecera: #8a6d45;
+      --color-cabecera-texto: #f7f1e1;
+      --color-texto: #f0e9d8;
+      --color-texto-suave: #c9bd9e;
+      --color-borde: #4a3f2c;
+      --color-enlace: #e0c48a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--color-cabecera);
+    color: var(--color-cabecera-texto);
+    padding: 28px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.5rem;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+  .tarjeta {
+    background: var(--color-tarjeta);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border: 1px solid var(--color-borde);
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: var(--color-texto);
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 16px 0 6px 0;
+    color: var(--color-texto);
+  }
+  p, li {
+    font-size: 0.92rem;
+    color: var(--color-texto);
+  }
+  ul {
+    margin: 6px 0;
+    padding-inline-start: 20px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  a {
+    color: var(--color-enlace);
+  }
+  .indice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .indice li {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  .nota {
+    font-size: 0.82rem;
+    color: var(--color-texto-suave);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--color-borde);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--color-texto-suave);
+  }
+
+  .idiomas { display:flex; flex-wrap:wrap; justify-content:center; gap:6px 12px; margin-top:10px; font-size:0.82rem; }
+  .idiomas a { color: var(--color-cabecera-texto); text-decoration:none; opacity:0.85; }
+  .idiomas a.activo { font-weight:700; opacity:1; text-decoration:underline; }
+  ol { margin: 6px 0; padding-inline-start: 22px; }
+  .tabla-scroll { overflow-x:auto; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎣 Capturia user guide</h1>
+  <p>Updated on 26 September 2026</p>
+  <nav class="idiomas"><a href="es.html" hreflang="es">Español</a> <a href="en.html" hreflang="en" class="activo">English</a> <a href="fr.html" hreflang="fr">Français</a> <a href="it.html" hreflang="it">Italiano</a> <a href="pt.html" hreflang="pt">Português</a> <a href="ar.html" hreflang="ar">العربية</a></nav>
+</header>
+
+<!-- Contenido del manual: la app lo descarga y muestra este <main> dentro de su propia pantalla
+     (con copia guardada para leerlo sin conexión). Generado a partir del manual en Claude Docs. -->
+<main id="contenido-manual">
+
+  <div class="tarjeta">
+    <h2 id="indice">Contents</h2>
+    <ul class="indice">
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#getting-started">Getting started</a></li>
+      <li><a href="#getting-around-the-app">Getting around the app</a></li>
+      <li><a href="#spots">Spots</a></li>
+      <li><a href="#catches">Catches</a></li>
+      <li><a href="#blanks-and-big-bites">Blanks and big bites</a></li>
+      <li><a href="#calendar">Calendar</a></li>
+      <li><a href="#species">Species</a></li>
+      <li><a href="#buddies">Buddies</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#about-capturia">About Capturia</a></li>
+      <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+    </ul>
+  </div>
+
+  <div class="tarjeta">
+    <h2 id="welcome">Welcome</h2>
+    <p>Capturia is your digital fishing log: record your fishing spots, your catches (with photos, weight and the day's conditions) and also those days when nothing bit. Everything is stored on your phone and, if you like, backed up to the cloud. Over time it becomes your own fishing history: which species bites best at which spot, with which tide, with which wind.</p>
+    <p>This guide grows little by little as the app grows.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="getting-started">Getting started</h2>
+    <ol>
+      <li>Choose your language (Spanish, English, French, Italian, Portuguese or Arabic) and tell us whether you already have an account or are new. If you already have one, you go straight to sign-in.</li>
+      <li>If you are new, pick your fishing area by hand (continent, country and, in Spain, region), the water type and the light or dark theme.</li>
+      <li>Choose your username: the app checks right away whether it is free. Once set, it can no longer be changed.</li>
+      <li>Sign up with your email and password, or with your Google account.</li>
+      <li>Your catalogue starts with five species already loaded: Gilthead bream, Sea bass, Squid, Octopus and Salmon.</li>
+      <li>You start on the Free plan. Anyone who signs up before 1 November 2026 gets 2 months of Premium as a gift. Your plan is in the avatar menu &gt; Subscription and plan.</li>
+    </ol>
+  </div>
+  <div class="tarjeta">
+    <h2 id="getting-around-the-app">Getting around the app</h2>
+    <ul>
+      <li><strong>Home screen</strong>: big buttons for what you use most (add catch, calendar, catches, profile, settings, guide, About…). Those your plan doesn't include show a padlock.</li>
+      <li><strong>Bottom bar</strong>: Species, Spots, Catches, Blanks, Calendar and Hallelujah! (new catch). The button of the section you are in is marked with a darker border and a lighter background.</li>
+      <li><strong>Side menu</strong> (☰): your links, Tools, Buddies and Groups, and Help (guide and About Capturia). At the top right it has a shortcut to 🏠 Home.</li>
+      <li><strong>Avatar menu</strong> (your photo, top right): 🏠 Home, My profile, Settings, Subscription and plan, and Sign out.</li>
+    </ul>
+  </div>
+  <div class="tarjeta">
+    <h2 id="spots">Spots</h2>
+    <p>A spot is a place where you fish: a reservoir, a stretch of river, a beach. From Spots, tap <strong>+ New</strong> and fill in:</p>
+    <ul>
+      <li><strong>Name</strong> and <strong>spot type</strong> (reservoir, river, sea, etc.).</li>
+      <li><strong>Photo</strong>, optional.</li>
+      <li><strong>Location</strong>: you can use your current GPS position.</li>
+      <li><strong>Visibility</strong>: public or private. A public spot can be seen by anyone who receives a catch of yours made there; a private one cannot.</li>
+    </ul>
+    <p>Each spot shows how many catches and blank days you have recorded there. Tap the card to view it read-only; the pencil edits it and the bin deletes it. A spot with catches or blank days recorded cannot be deleted until you remove or move them. With the <strong>magnifying glass</strong>, next to "All spots", you search a spot by name as you type.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="catches">Catches</h2>
+    <p>From Catches, tap <strong>+ New</strong> (or Hallelujah! in the bottom bar) to record a fish. You can add:</p>
+    <ul>
+      <li><strong>Species</strong> and <strong>spot</strong> (required) and <strong>weight</strong>.</li>
+      <li><strong>Photos or video</strong> of the catch.</li>
+      <li><strong>Multiple catch</strong>: if you caught several fish at once, record them as a single entry with their quantity.</li>
+      <li><strong>Day's conditions</strong>: weather data (wind, rain, cloud cover and moon phase) is collected automatically with the weather button, from the spot or your location; the rest you note yourself: tide, tide type, water clarity and colour, sea state, rod, reel, bait or lure. Everything is optional, but the more you fill in, the more useful your history becomes over time.</li>
+      <li><strong>Visibility</strong>: private or public for your buddies.</li>
+    </ul>
+    <p>In Catches you can filter by species or spot and search with the <strong>magnifying glass</strong> by species name. With <strong>+ Filters</strong> you get advanced filters (dates, weight, specific conditions or including your buddies' public catches), available from the Premium plan. You can also share the picture of a catch with the Share button.</p>
+    <p>Tap a card to view the catch read-only. Catches a buddy sends you can be viewed and deleted, but not edited or forwarded.</p>
+    <h3>Editing or deleting a catch</h3>
+    <p>From the list, the pencil opens the catch for editing and the bin deletes it. When deleting, the <strong>"Also delete from the cloud"</strong> box (ticked by default) decides whether your cloud copy is deleted too, not just the one on your phone. If you are offline at that moment, the app warns you and does it by itself as soon as you are back online or reopen the app. The same applies to Spots, Species, Blanks and Big bites.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="blanks-and-big-bites">Blanks and big bites</h2>
+    <p>Not everything is catches: in Blanks you also keep the days when nothing bit. A <strong>blank</strong> records the date, the spot, the fishing hours and the day's conditions, just like a catch but without a fish. Over time it helps you learn which conditions do not work at each spot.</p>
+    <p>A <strong>big bite</strong> is the one that got away: you felt the pull or your line broke, but the fish never came out. You can note the species you suspect it was and whether the line broke. Both are recorded from the same screen, with the big-bite switch, and the list is filtered with <strong>All / Blanks / Bites</strong>.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="calendar">Calendar</h2>
+    <p>The <strong>Calendar</strong> button in the bottom bar (between Blanks and Hallelujah!) opens a monthly view with a coloured dot for every day you recorded something: catches, blanks and big bites. Tap a day to see what you noted and open that record read-only.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="species">Species</h2>
+    <p>The Species screen shows <strong>your catalogue</strong>: the species you have on your phone (the five starter ones, the ones you add from the official catalogue and the ones you create yourself). It syncs with your cloud copy manually or automatically, depending on Settings. The full <strong>official catalogue</strong> of Capturia, with a guide minimum size, has its own screen (from the Plus plan), where you add species to yours.</p>
+    <p>Use the <strong>magnifying glass</strong>, next to "All species", to search by common or scientific name. Tap a card to view it read-only. When you delete a species you get the same prompt as in Spots and Catches, with the option to delete it from the cloud too; it cannot be deleted if it has catches recorded.</p>
+    <p>How many species you can have in your catalogue depends on your plan (see Plans). Official catalogue names are shown in your language when a translation exists; species you create are shown as you wrote them.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="buddies">Buddies</h2>
+    <p>From the Premium plan you can add buddies (side menu &gt; My buddies, searching by username) and send them, with the <strong>Send</strong> button on each record, catches with all their information (including weather and sea data), spots, species and big bites. Users on Plus or higher can receive them.</p>
+    <ul>
+      <li><strong>When you receive something</strong>, the app tells you when you open it (or right away, if it is already open). You can save it or discard it. If you already have that species or spot, yours is reused instead of creating a duplicate.</li>
+      <li><strong>Hide</strong> from public search in My profile if you want to use Capturia just as a fishing log: nobody will be able to find you to add you.</li>
+      <li><strong>Remove</strong> (X): they stop being your buddy.</li>
+      <li><strong>Block</strong> (padlock, under the X): besides removing them, they can no longer add you or send you anything. Items they had not accepted from you yet are cancelled, and the catches and big bites they already accepted are deleted from their cloud and from their phone the next time they open the app. If someone sends you something you don't want, you can also block and report them from the notice itself.</li>
+      <li><strong>Unblock</strong>: in the expandable "Blocked users" card. They don't become your buddy again automatically, and what was deleted when blocking is not recovered.</li>
+    </ul>
+    <h3>Groups</h3>
+    <p>Groups are chats between anglers. From the Plus plan you can search public groups and join them (up to 2 public and 2 private at a time); from Premium you can create public or private groups (the eye next to Private/Public also switches the visibility) and invite whoever you want.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="plans">Plans</h2>
+    <p>Capturia has four plans. These are their main limits:</p>
+    <div class="tabla-scroll"><table>
+      <tr><th>Plan</th><th>Spots and species</th><th>Catches, blanks and big bites</th><th>Photos per catch</th><th>Cloud</th></tr>
+      <tr><td>Free</td><td>5 of each</td><td>10 of each</td><td>1</td><td>No cloud</td></tr>
+      <tr><td>Plus</td><td>100 of each</td><td>300 of each</td><td>3</td><td>500 MB</td></tr>
+      <tr><td>Premium</td><td>Unlimited</td><td>Unlimited</td><td>8 + video</td><td>2 GB</td></tr>
+      <tr><td>Pro</td><td colspan="4">Coming soon, for professionals only</td></tr>
+    </table></div>
+    <p>Plus also adds groups, the official catalogue, app backgrounds and backup; Premium adds advanced filters, sending to buddies, creating groups and using your own background photo. Your plan and the details of each one are in the avatar menu &gt; Subscription and plan.</p>
+    <p>Offline, the app respects your plan until the date your paid or gifted period ends (for up to 30 days without connecting); as soon as there is a connection, the server has the final say.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="settings">Settings</h2>
+    <p>From your avatar menu you open Settings, where you can change:</p>
+    <ul>
+      <li>The app's <strong>language</strong> and <strong>theme</strong> (light or dark).</li>
+      <li><strong>Colour customisation</strong>: colour of the header and bottom bar, bar icons in white or black (all plans) and card colour (from Plus). "Restore original colours" brings back the usual ones.</li>
+      <li><strong>App background</strong>: predesigned backgrounds or a colour (from Plus), or your own photo from the camera or gallery (from Premium). The predesigned backgrounds come from Pixabay.</li>
+      <li><strong>Automatic upload</strong> to the cloud (from Plus). If you don't turn it on, you can save and restore your copy manually from the side menu &gt; Tools or from Home.</li>
+    </ul>
+  </div>
+  <div class="tarjeta">
+    <h2 id="about-capturia">About Capturia</h2>
+    <p>In the side menu &gt; Help &gt; 🧭 About Capturia (or the About button on Home) you'll find the installed version, what's new, the privacy policy, credits and licences, and how to write to us, rate the app or share it with your friends.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="frequently-asked-questions">Frequently asked questions</h2>
+    <p><strong>Do I lose my data if I delete the app or change phones?</strong> No, as long as you have your copy in the cloud: your data is saved on your phone first and, with the backup, in the cloud too. On a new phone, sign in and use Restore data (side menu &gt; Tools or Home).</p>
+    <p><strong>If I delete a catch that is already in the cloud, is it deleted there too?</strong> Yes, if you leave the "Also delete from the cloud" box ticked when confirming the deletion.</p>
+    <p><strong>Can I use Capturia offline?</strong> Yes, to record and look up your data. Syncing with the cloud (uploads, backups and pending deletions) happens by itself as soon as you are back online.</p>
+  </div>
+
+</main>
+
+<footer>
+  <a href="../">Privacy policy</a> · © 2026 Capturia
+</footer>
+
+</body>
+</html>

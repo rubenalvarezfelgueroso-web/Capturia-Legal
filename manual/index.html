@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capturia · Manual</title>
+<script>
+  // Redirige al manual en el idioma del navegador (español si no está disponible).
+  (function () {
+    var disponibles = ['es', 'en', 'fr', 'it', 'pt', 'ar'];
+    var idioma = (navigator.language || 'es').slice(0, 2).toLowerCase();
+    if (disponibles.indexOf(idioma) === -1) idioma = 'es';
+    location.replace(idioma + '.html');
+  })();
+</script>
+</head>
+<body>
+<p><a href="es.html">Español</a> · <a href="en.html">English</a> · <a href="fr.html">Français</a> · <a href="it.html">Italiano</a> · <a href="pt.html">Português</a> · <a href="ar.html">العربية</a></p>
+</body>
+</html>
