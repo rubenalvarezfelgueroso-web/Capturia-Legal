@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informativa sulla privacy · Capturia</title>
+<style>
+  :root {
+    --color-fondo: #f7f1e1;
+    --color-tarjeta: #ecdfc0;
+    --color-cabecera: #bc9963;
+    --color-cabecera-texto: #3d2b12;
+    --color-texto: #3d2b12;
+    --color-texto-suave: #6b5b3f;
+    --color-borde: #d8c79f;
+    --color-enlace: #6b4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-fondo: #1e1a14;
+      --color-tarjeta: #2a2419;
+      --color-cabecera: #8a6d45;
+      --color-cabecera-texto: #f7f1e1;
+      --color-texto: #f0e9d8;
+      --color-texto-suave: #c9bd9e;
+      --color-borde: #4a3f2c;
+      --color-enlace: #e0c48a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--color-cabecera);
+    color: var(--color-cabecera-texto);
+    padding: 28px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.5rem;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+  .tarjeta {
+    background: var(--color-tarjeta);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border: 1px solid var(--color-borde);
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: var(--color-texto);
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 16px 0 6px 0;
+    color: var(--color-texto);
+  }
+  p, li {
+    font-size: 0.92rem;
+    color: var(--color-texto);
+  }
+  ul {
+    margin: 6px 0;
+    padding-inline-start: 20px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  a {
+    color: var(--color-enlace);
+  }
+  .indice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .indice li {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  .nota {
+    font-size: 0.82rem;
+    color: var(--color-texto-suave);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--color-borde);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--color-texto-suave);
+  }
+  .idiomas { display:flex; flex-wrap:wrap; justify-content:center; gap:4px 12px; margin-top: 10px; font-size: 0.82rem; }
+  .idiomas a { color: var(--color-cabecera-texto); opacity: 0.85; }
+  .idiomas strong { opacity: 1; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎣 Informativa sulla privacy di Capturia</h1>
+  <p>Ultimo aggiornamento: 13 settembre 2026</p>
+  <nav class="idiomas"><a href="../" hreflang="es">Español</a> <a href="../en/" hreflang="en">English</a> <a href="../fr/" hreflang="fr">Français</a> <strong>Italiano</strong> <a href="../pt/" hreflang="pt">Português</a> <a href="../de/" hreflang="de">Deutsch</a> <a href="../ar/" hreflang="ar">العربية</a></nav>
+</header>
+
+<main>
+
+  <div class="tarjeta">
+    <h2 id="indice">Indice</h2>
+    <ul class="indice">
+      <li><a href="#responsable">1. Titolare del trattamento</a></li>
+      <li><a href="#datos">2. Quali dati trattiamo</a></li>
+      <li><a href="#finalidad">3. Per cosa li usiamo e con quale base giuridica</a></li>
+      <li><a href="#almacenamiento">4. Dove vengono conservati i tuoi dati</a></li>
+      <li><a href="#terceros">5. Con chi li condividiamo</a></li>
+      <li><a href="#conservacion">6. Per quanto tempo li conserviamo</a></li>
+      <li><a href="#derechos">7. I tuoi diritti</a></li>
+      <li><a href="#menores">8. Minori</a></li>
+      <li><a href="#seguridad">9. Sicurezza</a></li>
+      <li><a href="#cambios">10. Modifiche a questa informativa</a></li>
+      <li><a href="#contacto">11. Contatti</a></li>
+    </ul>
+  </div>
+
+  <div class="tarjeta">
+    <p>Questa informativa spiega quali informazioni raccoglie <strong>Capturia</strong> (l'app di pesca disponibile per Android/iOS), come le utilizziamo e quali diritti hai su di esse. È redatta in conformità al Regolamento generale sulla protezione dei dati dell'UE (GDPR) e alla Legge organica spagnola 3/2018 sulla protezione dei dati personali e la garanzia dei diritti digitali (LOPDGDD).</p>
+    <p class="nota">La presente informativa è disponibile in più lingue. In caso di discrepanza tra le versioni, prevale la versione in spagnolo.</p>
+  </div>
+
+  <div class="tarjeta" id="responsable">
+    <h2>1. Titolare del trattamento</h2>
+    <p>
+      <strong>Rubén Álvarez Felgueroso</strong>, sviluppatore di Capturia, decide quali dati vengono trattati e per quale finalità.<br>
+      Contatto: <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>
+    </p>
+    <p class="nota">Trattandosi dell'app di uno sviluppatore individuale, non esiste un Responsabile della protezione dei dati (non è obbligatorio per questo tipo di trattamento).</p>
+  </div>
+
+  <div class="tarjeta" id="datos">
+    <h2>2. Quali dati trattiamo</h2>
+
+    <h3>Account e profilo</h3>
+    <ul>
+      <li><strong>Registrazione:</strong> indirizzo e-mail e password, oppure il tuo account Google o Apple se scegli «Accedi con Google» o «Accedi con Apple». Se, accedendo con Apple, scegli di nascondere la tua e-mail, riceviamo solo l'indirizzo di inoltro anonimo che Apple ti assegna, non la tua e-mail reale. Non vediamo mai la tua password: è gestita in forma cifrata dal nostro fornitore di autenticazione, Supabase.</li>
+      <li><strong>Profilo pubblico:</strong> nome utente, foto dell'avatar, una breve descrizione e i link che decidi di aggiungere tu stesso in «I miei link».</li>
+      <li><strong>Piano di abbonamento</strong> (Gratuito/Plus/Premium/Pro) e piattaforma da cui usi l'app (Android/iOS/web), per poterti offrire assistenza e per statistiche interne di utilizzo.</li>
+    </ul>
+
+    <h3>Contenuti che crei nell'app</h3>
+    <ul>
+      <li><strong>Spot di pesca:</strong> nome, tipo, foto e coordinate GPS del luogo (solo se attivi la posizione quando crei uno spot).</li>
+      <li><strong>Catture:</strong> specie, spot, foto del pesce, un video se decidi di aggiungerlo e dati ambientali del momento (marea, fase lunare, vento, stato del mare, ecc.) che inserisci tu stesso.</li>
+      <li><strong>Cappotti e grandi abboccate:</strong> registrazioni delle tue uscite di pesca (con o senza cattura), inclusa la descrizione che scrivi.</li>
+      <li><strong>Specie personali:</strong> se aggiungi una specie che non è nel catalogo ufficiale, compresa la sua foto.</li>
+    </ul>
+    <p class="nota">Tutti questi contenuti possono essere contrassegnati come <em>privati</em> o <em>pubblici</em>; i contenuti pubblici sono visibili agli altri utenti di Capturia.</p>
+
+    <h3>Dati tecnici</h3>
+    <ul>
+      <li>Lingua e tema (chiaro/scuro) scelti e le preferenze di personalizzazione grafica disponibili a partire da determinati piani.</li>
+      <li>Identificativo interno del tuo account, usato per collegarlo al fornitore dei pagamenti (RevenueCat) e al database.</li>
+    </ul>
+
+    <p class="nota">Capturia non usa cookie di tracciamento né SDK pubblicitari o di analisi di terze parti. Non accediamo ai tuoi contatti, ai tuoi messaggi né ad altre app del dispositivo.</p>
+  </div>
+
+  <div class="tarjeta" id="finalidad">
+    <h2>3. Per cosa li usiamo e con quale base giuridica</h2>
+    <table>
+      <thead>
+        <tr><th>Finalità</th><th>Base giuridica (GDPR)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Creare il tuo account e darti accesso all'app</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+        <tr><td>Salvare e mostrare i tuoi spot, catture e cappotti</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+        <tr><td>Backup dei tuoi dati nel cloud (a partire dal piano Plus)</td><td>Consenso, quando lo attivi (art. 6.1.a)</td></tr>
+        <tr><td>Gestire il tuo abbonamento e il tuo piano</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+        <tr><td>Mostrare i contenuti pubblici degli altri utenti e i tuoi</td><td>Consenso, quando scegli la visibilità (art. 6.1.a)</td></tr>
+        <tr><td>Assistenza tecnica e statistiche interne di utilizzo</td><td>Legittimo interesse (art. 6.1.f)</td></tr>
+        <tr><td>Adempiere a obblighi di legge (ad es. richieste di un'autorità)</td><td>Obbligo legale (art. 6.1.c)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tarjeta" id="almacenamiento">
+    <h2>4. Dove vengono conservati i tuoi dati</h2>
+    <p>Per impostazione predefinita, con il <strong>piano Gratuito</strong>, le tue specie, i tuoi spot, le catture e i cappotti vengono salvati solo sul tuo dispositivo (database locale) e non arrivano ai nostri server.</p>
+    <p>A partire dal <strong>piano Plus</strong>, se attivi il backup nel cloud, questi dati (oltre al tuo profilo e al tuo account, che esistono fin dalla registrazione) vengono salvati sui server di <strong>Supabase</strong> situati nel Regno Unito (Londra).</p>
+  </div>
+
+  <div class="tarjeta" id="terceros">
+    <h2>5. Con chi li condividiamo</h2>
+    <p>Non vendiamo i tuoi dati a nessuno. Li condividiamo solo con i fornitori strettamente necessari al funzionamento dell'app, che agiscono come responsabili del trattamento:</p>
+    <ul>
+      <li><strong>Supabase</strong> (database, autenticazione e archiviazione di foto e video).</li>
+      <li><strong>RevenueCat</strong> (gestione degli abbonamenti e degli acquisti in-app; società con sede negli Stati Uniti).</li>
+      <li><strong>Google</strong> o <strong>Apple</strong>, solo se scegli di accedere con il tuo account Google o Apple.</li>
+      <li><strong>Apple / Google</strong> (App Store / Google Play), come piattaforme di distribuzione e di gestione del pagamento degli abbonamenti.</li>
+    </ul>
+    <p>Quando questi fornitori si trovano al di fuori dello Spazio economico europeo, il trasferimento avviene nel rispetto delle garanzie previste dal GDPR. In particolare, il nostro database (Supabase) è ospitato nel Regno Unito, Paese che dispone di una decisione di adeguatezza della Commissione europea: ciò significa che è considerato in grado di offrire un livello di protezione equivalente a quello dell'UE, per cui i dati possono esservi trasferiti senza garanzie aggiuntive. Per gli altri fornitori al di fuori dell'UE/SEE (come RevenueCat, negli Stati Uniti), il trasferimento si basa sulle clausole contrattuali tipo della Commissione europea.</p>
+  </div>
+
+  <div class="tarjeta" id="conservacion">
+    <h2>6. Per quanto tempo li conserviamo</h2>
+    <p>Conserviamo i tuoi dati finché il tuo account è attivo. Se elimini il tuo account, cancelliamo dai nostri server il tuo profilo e i contenuti associati, salvo che la legge ci obblighi a conservare qualcosa (ad esempio per motivi contabili o di risoluzione delle controversie) per il periodo previsto dalla legge.</p>
+    <p>Puoi eliminare il tuo account dall'app stessa (Il mio profilo → Elimina il mio account) oppure via e-mail. <a href="../eliminar-cuenta/it/">Come eliminare il tuo account</a>.</p>
+  </div>
+
+  <div class="tarjeta" id="derechos">
+    <h2>7. I tuoi diritti</h2>
+    <p>Come utente di Capturia, puoi esercitare in qualsiasi momento i tuoi diritti di:</p>
+    <ul>
+      <li><strong>Accesso:</strong> sapere quali tuoi dati trattiamo.</li>
+      <li><strong>Rettifica:</strong> correggere dati inesatti (molti, come il nome visualizzato o la foto, puoi modificarli tu stesso da «Il mio profilo» e «Impostazioni»).</li>
+      <li><strong>Cancellazione:</strong> chiedere che cancelliamo i tuoi dati.</li>
+      <li><strong>Portabilità:</strong> ricevere i tuoi dati in un formato riutilizzabile.</li>
+      <li><strong>Opposizione e limitazione:</strong> opporti a un trattamento specifico o chiedere che lo limitiamo.</li>
+    </ul>
+    <p>Per esercitare uno qualsiasi di questi diritti, scrivici a <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>. Risponderemo entro un mese al massimo.</p>
+    <p class="nota">Se ritieni che non abbiamo gestito correttamente la tua richiesta, puoi presentare un reclamo all’autorità di protezione dei dati del Paese dell’UE o del SEE in cui risiedi, lavori o in cui si è verificata la presunta violazione. In Italia è il <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">Garante per la protezione dei dati personali</a>; in Spagna, dove ha sede il titolare di Capturia, l’<a href="https://www.aepd.es" target="_blank" rel="noopener">Agenzia spagnola per la protezione dei dati (AEPD)</a>. Puoi trovare le autorità di tutti i Paesi sul sito del <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">Comitato europeo per la protezione dei dati</a>.</p>
+  </div>
+
+  <div class="tarjeta" id="menores">
+    <h2>8. Minori</h2>
+    <p>Capturia non è destinata ai minori di 14 anni. Se sei un genitore o un tutore e ritieni che un minore a tuo carico ci abbia fornito dati personali senza la tua autorizzazione, contattaci per eliminarli.</p>
+  </div>
+
+  <div class="tarjeta" id="seguridad">
+    <h2>9. Sicurezza</h2>
+    <p>Adottiamo misure tecniche e organizzative ragionevoli per proteggere i tuoi dati: l'autenticazione e l'archiviazione nel cloud avvengono tramite Supabase, con connessioni cifrate (HTTPS) e controllo degli accessi a livello di riga (ogni utente può leggere e modificare solo i propri dati, tranne i contenuti che altri contrassegnano come pubblici).</p>
+  </div>
+
+  <div class="tarjeta" id="cambios">
+    <h2>10. Modifiche a questa informativa</h2>
+    <p>Possiamo aggiornare questa informativa se cambiano le nostre pratiche o la normativa applicabile. Se la modifica è rilevante, te lo comunicheremo all'interno dell'app. La data dell'ultimo aggiornamento compare all'inizio di questa pagina.</p>
+  </div>
+
+  <div class="tarjeta" id="contacto">
+    <h2>11. Contatti</h2>
+    <p>Per qualsiasi domanda su questa informativa o sui tuoi dati, scrivici a <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>.</p>
+  </div>
+
+</main>
+
+<footer>
+  Capturia — Informativa sulla privacy
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="capturia-manual-version" content="2026-09-28">
+<title>Capturia-Benutzerhandbuch</title>
+<style>
+  :root {
+    --color-fondo: #f7f1e1;
+    --color-tarjeta: #ecdfc0;
+    --color-cabecera: #bc9963;
+    --color-cabecera-texto: #3d2b12;
+    --color-texto: #3d2b12;
+    --color-texto-suave: #6b5b3f;
+    --color-borde: #d8c79f;
+    --color-enlace: #6b4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-fondo: #1e1a14;
+      --color-tarjeta: #2a2419;
+      --color-cabecera: #8a6d45;
+      --color-cabecera-texto: #f7f1e1;
+      --color-texto: #f0e9d8;
+      --color-texto-suave: #c9bd9e;
+      --color-borde: #4a3f2c;
+      --color-enlace: #e0c48a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--color-cabecera);
+    color: var(--color-cabecera-texto);
+    padding: 28px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.5rem;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+  .tarjeta {
+    background: var(--color-tarjeta);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border: 1px solid var(--color-borde);
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: var(--color-texto);
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 16px 0 6px 0;
+    color: var(--color-texto);
+  }
+  p, li {
+    font-size: 0.92rem;
+    color: var(--color-texto);
+  }
+  ul {
+    margin: 6px 0;
+    padding-inline-start: 20px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  a {
+    color: var(--color-enlace);
+  }
+  .indice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .indice li {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  .nota {
+    font-size: 0.82rem;
+    color: var(--color-texto-suave);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--color-borde);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--color-texto-suave);
+  }
+
+  .idiomas { display:flex; flex-wrap:wrap; justify-content:center; gap:6px 12px; margin-top:10px; font-size:0.82rem; }
+  .idiomas a { color: var(--color-cabecera-texto); text-decoration:none; opacity:0.85; }
+  .idiomas a.activo { font-weight:700; opacity:1; text-decoration:underline; }
+  ol { margin: 6px 0; padding-inline-start: 22px; }
+  .tabla-scroll { overflow-x:auto; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎣 Capturia-Benutzerhandbuch</h1>
+  <p>Aktualisiert am 28. September 2026</p>
+  <nav class="idiomas"><a href="es.html" hreflang="es">Español</a> <a href="en.html" hreflang="en">English</a> <a href="fr.html" hreflang="fr">Français</a> <a href="it.html" hreflang="it">Italiano</a> <a href="pt.html" hreflang="pt">Português</a> <a href="de.html" hreflang="de" class="activo">Deutsch</a> <a href="ar.html" hreflang="ar">العربية</a></nav>
+</header>
+
+<!-- Contenido del manual (alemán): la app lo descarga y muestra este <main> dentro de su propia pantalla
+     (con copia guardada para leerlo sin conexión). Generado a partir del manual en Claude Docs. -->
+<main id="contenido-manual">
+
+  <div class="tarjeta">
+    <h2 id="indice">Inhalt</h2>
+    <ul class="indice">
+      <li><a href="#bienvenida">Willkommen</a></li>
+      <li><a href="#primeros-pasos">Erste Schritte</a></li>
+      <li><a href="#moverse-por-la-app">Durch die App navigieren</a></li>
+      <li><a href="#sitios">Angelplätze</a></li>
+      <li><a href="#capturas">Fänge</a></li>
+      <li><a href="#bolos-y-grandes-picadas">Schneidertage und große Bisse</a></li>
+      <li><a href="#calendario">Kalender</a></li>
+      <li><a href="#especies">Arten</a></li>
+      <li><a href="#companeros">Angelfreunde</a></li>
+      <li><a href="#planes">Tarife</a></li>
+      <li><a href="#ajustes">Einstellungen</a></li>
+      <li><a href="#acerca-de-capturia">Über Capturia</a></li>
+      <li><a href="#preguntas-frecuentes">Häufige Fragen</a></li>
+    </ul>
+  </div>
+
+  <div class="tarjeta">
+    <h2 id="bienvenida">Willkommen</h2>
+    <p>Capturia ist dein digitales Angeltagebuch: Erfasse deine Angelplätze, deine Fänge (mit Fotos, Gewicht und den Bedingungen des Tages) und auch die Tage, an denen nichts gebissen hat. Alles wird auf deinem Handy gespeichert und, wenn du möchtest, in der Cloud gesichert. Mit der Zeit wird daraus deine eigene Angelgeschichte: welche Art an welchem Platz am besten beißt, bei welcher Tide, bei welchem Wind.</p>
+    <p>Dieses Handbuch wird nach und nach erweitert, während die App wächst.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="primeros-pasos">Erste Schritte</h2>
+    <ol>
+      <li>Wähle deine Sprache (Spanisch, Englisch, Französisch, Italienisch, Portugiesisch, Arabisch oder Deutsch) und sag uns, ob du schon ein Konto hast oder neu bist. Wenn du schon ein Konto hast, geht es direkt zur Anmeldung.</li>
+      <li>Wenn du neu bist, wähle dein Angelgebiet von Hand (Kontinent, Land und in Spanien die autonome Gemeinschaft), die Art des Gewässers und das helle oder dunkle Design.</li>
+      <li>Wähle deinen Benutzernamen: Die App prüft sofort, ob er noch frei ist. Einmal festgelegt, kann er nicht mehr geändert werden.</li>
+      <li>Registriere dich mit E-Mail und Passwort oder mit deinem Google-Konto.</li>
+      <li>Dein Katalog startet mit fünf bereits geladenen Arten: Goldbrasse, Wolfsbarsch, Kalmar, Krake und Lachs.</li>
+      <li>Du startest im Free-Tarif. Deinen Tarif findest du im Avatar-Menü &gt; Abo und Tarif.</li>
+    </ol>
+  </div>
+  <div class="tarjeta">
+    <h2 id="moverse-por-la-app">Durch die App navigieren</h2>
+    <ul>
+      <li><strong>Startbildschirm</strong>: große Schaltflächen für das Wichtigste (Fang hinzufügen, Kalender, Fänge, Profil, Einstellungen, Handbuch, Über…). Was dein Tarif nicht enthält, erscheint mit einem Schloss.</li>
+      <li><strong>Untere Leiste</strong>: Arten, Plätze, Fänge, Schneider, Kalender und Halleluja! (neuer Fang). Die Schaltfläche des Bereichs, in dem du gerade bist, hat einen dunkleren Rand und einen helleren Hintergrund.</li>
+      <li><strong>Seitenmenü</strong> (☰): deine Links, Werkzeuge, Angelfreunde und Gruppen sowie Hilfe (Handbuch und Über Capturia). Oben rechts gibt es eine Verknüpfung zu 🏠 Start.</li>
+      <li><strong>Avatar-Menü</strong> (dein Foto, oben rechts): 🏠 Start, Mein Profil, Einstellungen, Abo und Tarif sowie Abmelden.</li>
+    </ul>
+  </div>
+  <div class="tarjeta">
+    <h2 id="sitios">Angelplätze</h2>
+    <p>Ein Angelplatz ist ein Ort, an dem du angelst: ein Stausee, ein Flussabschnitt, ein Strand. Tippe unter Plätze auf <strong>+ Neu</strong> und fülle aus:</p>
+    <ul>
+      <li><strong>Name</strong> und <strong>Art des Platzes</strong> (Stausee, Fluss, Meer usw.).</li>
+      <li><strong>Foto</strong>, optional.</li>
+      <li><strong>Standort</strong>: Du kannst deine aktuelle GPS-Position verwenden.</li>
+      <li><strong>Sichtbarkeit</strong>: öffentlich oder privat. Einen öffentlichen Platz kann jeder sehen, der einen dort gemachten Fang von dir erhält; einen privaten nicht.</li>
+    </ul>
+    <p>Jeder Angelplatz zeigt, wie viele Fänge und Schneidertage du dort erfasst hast. Tippe auf die Karte, um ihn schreibgeschützt anzusehen; der Stift bearbeitet ihn, der Papierkorb löscht ihn. Ein Platz mit erfassten Fängen oder Schneidertagen kann erst gelöscht werden, wenn du diese entfernst oder verschiebst. Mit der <strong>Lupe</strong> neben „Alle Angelplätze“ suchst du einen Platz schon beim Tippen nach seinem Namen.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="capturas">Fänge</h2>
+    <p>Tippe unter Fänge auf <strong>+ Neu</strong> (oder auf Halleluja! in der unteren Leiste), um einen Fisch zu erfassen. Du kannst hinzufügen:</p>
+    <ul>
+      <li><strong>Art</strong> und <strong>Angelplatz</strong> (Pflichtfelder) und <strong>Gewicht</strong>.</li>
+      <li><strong>Fotos oder Video</strong> des Fangs.</li>
+      <li><strong>Mehrfachfang</strong>: Wenn du mehrere Fische auf einmal gefangen hast, erfasse sie als einen Eintrag mit ihrer Anzahl.</li>
+      <li><strong>Bedingungen des Tages</strong>: Die Wetterdaten (Wind, Regen, Bewölkung und Mondphase) werden mit der Wetter-Schaltfläche automatisch abgerufen, ausgehend vom Angelplatz oder von deinem Standort; den Rest trägst du selbst ein: Gezeiten, Tidenart, Klarheit und Farbe des Wassers, Seegang, Rute, Rolle, Köder oder Kunstköder. Alles ist optional, aber je mehr du ausfüllst, desto nützlicher wird dein Verlauf mit der Zeit.</li>
+      <li><strong>Sichtbarkeit</strong>: privat oder öffentlich für deine Angelfreunde.</li>
+    </ul>
+    <p>Unter Fänge kannst du nach Art oder Angelplatz filtern und mit der <strong>Lupe</strong> nach dem Namen der Art suchen. Über <strong>+ Filter</strong> kommst du zu den erweiterten Filtern (Datum, Gewicht, bestimmte Bedingungen oder die öffentlichen Fänge deiner Angelfreunde einbeziehen), verfügbar ab dem Premium-Tarif. Außerdem kannst du das Bild eines Fangs über die Schaltfläche Teilen teilen.</p>
+    <p>Tippe auf eine Karte, um den Fang schreibgeschützt anzusehen. Fänge, die dir ein Angelfreund schickt, kannst du ansehen und löschen, aber nicht bearbeiten oder weiterleiten.</p>
+    <h3>Einen Fang bearbeiten oder löschen</h3>
+    <p>In der Liste öffnet der Stift den Fang zum Bearbeiten, der Papierkorb löscht ihn. Beim Löschen entscheidet das Kästchen <strong>„Auch in der Cloud löschen“</strong> (standardmäßig aktiviert), ob auch deine Kopie in der Cloud gelöscht wird und nicht nur die auf deinem Handy. Wenn du in dem Moment keine Verbindung hast, weist dich die App darauf hin und erledigt es von selbst, sobald die Verbindung wieder da ist oder du die App wieder öffnest. Dasselbe gilt für Angelplätze, Arten, Schneidertage und große Bisse.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="bolos-y-grandes-picadas">Schneidertage und große Bisse</h2>
+    <p>Nicht alles sind Fänge: Unter Schneider speicherst du auch die Tage, an denen nichts gebissen hat. Ein <strong>Schneidertag</strong> erfasst Datum, Angelplatz, Angelstunden und die Bedingungen des Tages, genau wie ein Fang, nur ohne Fisch. So erkennst du mit der Zeit, welche Bedingungen an welchem Platz nicht funktionieren.</p>
+    <p>Ein <strong>großer Biss</strong> ist der, der dir entwischt ist: Du hast den Ruck gespürt oder die Schnur ist gerissen, aber der Fisch kam nicht raus. Du kannst eintragen, welche Arten du vermutest und ob die Schnur gerissen ist. Beides wird im selben Bildschirm erfasst, mit dem Schalter für große Bisse, und die Liste lässt sich mit <strong>Alle / Schneider / Bisse</strong> filtern.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="calendario">Kalender</h2>
+    <p>Die Schaltfläche <strong>Kalender</strong> in der unteren Leiste (zwischen Schneider und Halleluja!) öffnet eine Monatsansicht mit einem farbigen Punkt für jeden Tag, an dem du etwas erfasst hast: Fänge, Schneidertage und große Bisse. Wische nach links oder rechts, um den Monat zu wechseln. Tippe auf einen Tag, um zu sehen, was du eingetragen hast, und den Eintrag schreibgeschützt zu öffnen.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="especies">Arten</h2>
+    <p>Der Bildschirm Arten zeigt <strong>deinen Katalog</strong>: die Arten auf deinem Handy (die fünf vom Start, die du aus dem offiziellen Katalog hinzufügst, und die du selbst anlegst). Er wird je nach Einstellungen manuell oder automatisch mit deiner Kopie in der Cloud abgeglichen. Den vollständigen <strong>offiziellen Katalog</strong> von Capturia, mit einem ungefähren Mindestmaß, findest du auf einem eigenen Bildschirm (ab dem Plus-Tarif); von dort aus fügst du Arten zu deinem hinzu.</p>
+    <p>Mit der <strong>Lupe</strong> neben „Alle Arten“ suchst du nach dem deutschen oder wissenschaftlichen Namen. Tippe auf eine Karte, um sie schreibgeschützt anzusehen. Beim Löschen einer Art erscheint derselbe Hinweis wie bei Angelplätzen und Fängen, mit der Option, sie auch aus der Cloud zu löschen; eine Art mit erfassten Fängen kann nicht gelöscht werden.</p>
+    <p>Wie viele Arten du in deinem Katalog haben kannst, hängt von deinem Tarif ab (siehe Tarife). Die Namen des offiziellen Katalogs werden in deiner Sprache angezeigt, wenn es eine Übersetzung gibt; Arten, die du selbst anlegst, erscheinen so, wie du sie geschrieben hast.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="companeros">Angelfreunde</h2>
+    <p>Ab dem Premium-Tarif kannst du Angelfreunde hinzufügen (Seitenmenü &gt; Meine Angelfreunde, Suche nach Benutzername) und ihnen über die Schaltfläche <strong>Senden</strong> in jedem Eintrag Fänge mit allen Infos (auch Wetter und Meer), Angelplätze, Arten und große Bisse schicken. Empfangen können sie Nutzer ab Plus.</p>
+    <ul>
+      <li><strong>Wenn dich jemand hinzufügt</strong>, bekommst du beim Öffnen der App einen Hinweis; wenn dein Tarif es erlaubt, kannst du ihn mit einem Tippen ebenfalls hinzufügen.</li>
+      <li><strong>Wenn du etwas empfängst</strong>, meldet sich die App beim Öffnen (oder sofort, wenn sie schon offen ist). Du kannst es speichern oder verwerfen. Wenn du diese Art oder diesen Angelplatz schon hast, wird deiner verwendet, statt ihn doppelt anzulegen.</li>
+      <li><strong>Verstecke dich</strong> in Mein Profil vor der öffentlichen Suche, wenn du Capturia nur als Angeltagebuch nutzen möchtest: Dann kann dich niemand finden, um dich hinzuzufügen.</li>
+      <li><strong>Entfernen</strong> (X): Er ist nicht mehr dein Angelfreund.</li>
+      <li><strong>Blockieren</strong> (Schloss, unter dem X): Er wird entfernt und kann dich außerdem nicht mehr hinzufügen oder dir etwas senden. Sendungen, die du noch nicht angenommen hast, werden storniert, und die Fänge und großen Bisse, die er schon von dir angenommen hat, werden beim nächsten Öffnen der App aus seiner Cloud und von seinem Handy gelöscht. Wenn dir jemand etwas schickt, das du nicht willst, kannst du ihn auch direkt im Hinweis blockieren und melden.</li>
+      <li><strong>Entsperren</strong>: in der aufklappbaren Karte „Blockierte Benutzer“. Er wird nicht automatisch wieder dein Angelfreund, und was beim Blockieren gelöscht wurde, kommt nicht zurück.</li>
+    </ul>
+    <h3>Gruppen</h3>
+    <p>Gruppen sind Chats zwischen Anglern. Ab dem Plus-Tarif kannst du öffentliche Gruppen suchen und beitreten (bis zu 2 öffentliche und 2 private gleichzeitig); ab Premium kannst du öffentliche oder private Gruppen erstellen (das Auge neben Privat/Öffentlich ändert ebenfalls die Sichtbarkeit) und einladen, wen du willst.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="planes">Tarife</h2>
+    <p>Capturia hat vier Tarife. Das sind ihre wichtigsten Grenzen:</p>
+    <div class="tabla-scroll"><table>
+      <tr><th>Tarif</th><th>Plätze und Arten</th><th>Fänge, Schneidertage und große Bisse</th><th>Fotos pro Fang</th><th>Cloud</th></tr>
+      <tr><td>Free</td><td>je 5</td><td>je 10</td><td>1</td><td>Keine Cloud</td></tr>
+      <tr><td>Plus</td><td>je 100</td><td>je 300</td><td>3</td><td>500 MB</td></tr>
+      <tr><td>Premium</td><td>Unbegrenzt</td><td>Unbegrenzt</td><td>8 + Video</td><td>2 GB</td></tr>
+      <tr><td>Pro</td><td colspan="4">Demnächst, nur für Profis</td></tr>
+    </table></div>
+    <p>Plus bringt außerdem Gruppen, den offiziellen Katalog, App-Hintergründe und das Backup; Premium bringt erweiterte Filter, Senden an Angelfreunde, Gruppen erstellen und ein eigenes Hintergrundfoto. Deinen Tarif und die Details zu jedem findest du im Avatar-Menü &gt; Abo und Tarif.</p>
+    <p>Ohne Verbindung respektiert die App deinen Tarif bis zu dem Datum, an dem das endet, was du bezahlt oder geschenkt bekommen hast (höchstens 30 Tage ohne Verbindung); sobald es Netz gibt, gilt, was der Server sagt.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="ajustes">Einstellungen</h2>
+    <p>Über das Avatar-Menü kommst du zu den Einstellungen, wo du Folgendes ändern kannst:</p>
+    <ul>
+      <li><strong>Sprache</strong> und <strong>Design</strong> (hell oder dunkel) der App.</li>
+      <li><strong>Farben anpassen</strong>: Farbe der Kopfzeile und der unteren Leiste, Symbole der Leiste in Weiß oder Schwarz (alle Tarife) und Farbe der Karten (ab Plus). „Originalfarben wiederherstellen“ stellt die ursprünglichen Farben wieder her.</li>
+      <li><strong>Hintergrund der App</strong>: vorgefertigte Hintergründe oder eine Farbe (ab Plus) oder dein eigenes Foto aus Kamera oder Galerie (ab Premium). Die vorgefertigten Hintergründe stammen von Pixabay.</li>
+      <li><strong>Automatischer Upload</strong> in die Cloud (ab Plus). Wenn du ihn nicht aktivierst, kannst du deine Kopie über das Seitenmenü &gt; Werkzeuge oder vom Startbildschirm aus von Hand sichern und wiederherstellen.</li>
+    </ul>
+  </div>
+  <div class="tarjeta">
+    <h2 id="acerca-de-capturia">Über Capturia</h2>
+    <p>Im Seitenmenü &gt; Hilfe &gt; 🧭 Über Capturia (oder über die Schaltfläche Über auf dem Startbildschirm) findest du die installierte Version, die Neuigkeiten, die Datenschutzerklärung, Quellen und Lizenzen sowie Möglichkeiten, uns zu schreiben, die App zu bewerten oder sie mit deinen Freunden zu teilen.</p>
+  </div>
+  <div class="tarjeta">
+    <h2 id="preguntas-frecuentes">Häufige Fragen</h2>
+    <p><strong>Gehen meine Daten verloren, wenn ich die App lösche oder das Handy wechsle?</strong> Nein, solange du eine Kopie in der Cloud hast: Deine Daten werden zuerst auf deinem Handy gespeichert und mit dem Backup auch in der Cloud. Melde dich auf einem neuen Handy an und verwende Daten wiederherstellen (Seitenmenü &gt; Werkzeuge oder Startbildschirm).</p>
+    <p><strong>Wenn ich einen Fang lösche, der schon in der Cloud ist, wird er dort auch gelöscht?</strong> Ja, wenn das Kästchen „Auch in der Cloud löschen“ beim Bestätigen aktiviert bleibt.</p>
+    <p><strong>Kann ich Capturia ohne Verbindung nutzen?</strong> Ja, um deine Daten zu erfassen und anzusehen. Der Abgleich mit der Cloud (Uploads, Sicherungen und ausstehende Löschungen) erfolgt automatisch, sobald die Verbindung wieder da ist.</p>
+  </div>
+
+</main>
+
+<footer>
+  <a href="../de/">Datenschutzerklärung</a> · © 2026 Capturia
+</footer>
+
+</body>
+</html>
