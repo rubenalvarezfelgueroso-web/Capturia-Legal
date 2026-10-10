@@ -133,7 +133,7 @@
 
 <header>
   <h1>🎣 Politique de confidentialité de Capturia</h1>
-  <p>Dernière mise à jour : 6 octobre 2026</p>
+  <p>Dernière mise à jour : 10 octobre 2026</p>
   <nav class="idiomas"><a href="../" hreflang="es">Español</a> <a href="../en/" hreflang="en">English</a> <strong>Français</strong> <a href="../it/" hreflang="it">Italiano</a> <a href="../pt/" hreflang="pt">Português</a> <a href="../de/" hreflang="de">Deutsch</a> <a href="../ar/" hreflang="ar">العربية</a></nav>
 </header>
 
@@ -160,6 +160,7 @@
   <div class="tarjeta">
     <p>Cette politique explique quelles informations recueille <strong>Capturia</strong> (l'application de pêche disponible sur Android/iOS), comment nous les utilisons et quels droits tu as sur elles. Elle a été rédigée conformément au Règlement général sur la protection des données de l'UE (RGPD) et à la loi organique espagnole 3/2018 sur la protection des données personnelles et la garantie des droits numériques (LOPDGDD).</p>
     <p class="nota">Cette politique est disponible en plusieurs langues. En cas de divergence entre les versions, la version espagnole prévaut.</p>
+    <p class="nota">Les conditions d'achat et d'abonnement (formules, renouvellement et changements de prix) se trouvent sur <a href="../condiciones/fr/">cette page</a>.</p>
   </div>
 
   <div class="tarjeta" id="responsable">
@@ -209,6 +210,7 @@
       <li>Identifiant interne de ton compte, utilisé pour le relier au fournisseur de paiement (RevenueCat) et à la base de données.</li>
       <li><strong>Notifications :</strong> uniquement si vous les activez dans les Réglages, un identifiant du téléphone généré par Firebase Cloud Messaging (service de Google), associé à votre compte et utilisé uniquement pour vous envoyer des alertes. Il est supprimé lorsque vous les désactivez, vous déconnectez sur ce téléphone ou supprimez votre compte.</li>
       <li><strong>Photos vérifiées :</strong> un indicateur (oui/non) précisant si chaque photo d'une prise a été faite avec l'appareil photo depuis l'application, pour afficher le badge de vérification.</li>
+      <li><strong>Identification des espèces (« Quel poisson est-ce ? ») :</strong> si vous utilisez cette fonction, la photo choisie est envoyée, réduite et sans métadonnées (EXIF), à notre fournisseur d’intelligence artificielle pour qu’il propose l’espèce, avec le pays, la région et le type d’eau indiqués dans votre profil, afin d’affiner le résultat. La photo n’est conservée ni sur nos serveurs ni sur ceux du fournisseur une fois analysée, et elle ne sert pas à entraîner des modèles. Pour chaque utilisation, nous ne gardons que la date et l’espèce proposée, afin de compter les identifications incluses dans votre formule.</li>
     </ul>
 
     <p class="nota">Capturia n'utilise pas de cookies de suivi ni de SDK publicitaires ou d'analyse tiers. Nous n'accédons pas à tes contacts, à tes messages ni aux autres applications de ton appareil.</p>
@@ -232,6 +234,7 @@
         <tr><td>Ajouter au catalogue officiel les espèces que tu marques comme publiques, avec leur nom et leur photo</td><td>Consentement, lorsque tu marques l'espèce comme publique (art. 6.1.a)</td></tr>
         <tr><td>Transmettre aux autres utilisateurs les messages, notes privées et invitations à des sorties que tu décides d'envoyer</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
         <tr><td>Vous envoyer des notifications sur votre téléphone (envois, notes, sorties, invitations et nouveaux compagnons), si vous les activez</td><td>Consentement, lorsque vous les activez (art. 6.1.a)</td></tr>
+        <tr><td>Identifier l’espèce d’une photo grâce à l’intelligence artificielle (« Quel poisson est-ce ? »), à votre demande</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
       </tbody>
     </table>
   </div>
@@ -251,6 +254,7 @@
       <li><strong>Google</strong> ou <strong>Apple</strong>, uniquement si tu choisis de te connecter avec ton compte Google ou Apple.</li>
       <li><strong>Apple / Google</strong> (App Store / Google Play), en tant que plateformes de distribution et de gestion du paiement des abonnements.</li>
       <li><strong>Google (Firebase Cloud Messaging)</strong>, uniquement si vous activez les notifications : il reçoit l'identifiant du téléphone et le texte de l'alerte (par exemple, « Pepe vous a envoyé une prise »), jamais le contenu envoyé. Entreprise basée aux États-Unis.</li>
+      <li><strong>Anthropic</strong> (intelligence artificielle Claude), uniquement lorsque vous utilisez « Quel poisson est-ce ? » : reçoit la photo à identifier, sans métadonnées, et la zone de pêche de votre profil (pays, région et type d’eau), jamais votre nom ni votre e-mail. Elle ne conserve pas la photo et ne l’utilise pas pour entraîner ses modèles. Entreprise basée aux États-Unis.</li>
     </ul>
     <p>En outre, les messages de groupe, les notes privées (y compris le téléphone ou l'e-mail que tu y ajoutes) et les sorties sont affichés aux utilisateurs à qui tu décides de les envoyer. C'est toi qui fais cet envoi ; Capturia ne partage pas ces données avec qui que ce soit d'autre.</p>
     <p>Lorsque ces fournisseurs se trouvent en dehors de l'Espace économique européen, le transfert s'effectue selon les garanties prévues par le RGPD. Plus précisément, notre base de données (Supabase) est hébergée au Royaume-Uni, pays qui bénéficie d'une décision d'adéquation de la Commission européenne : cela signifie qu'il est considéré comme offrant un niveau de protection équivalent à celui de l'UE, de sorte que les données peuvent y être transférées sans garanties supplémentaires. Pour les autres fournisseurs situés hors de l'UE/EEE (comme RevenueCat, aux États-Unis), le transfert repose sur les clauses contractuelles types de la Commission européenne.</p>

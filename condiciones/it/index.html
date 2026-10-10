@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Condizioni di acquisto e abbonamento · Capturia</title>
+<style>
+  :root {
+    --color-fondo: #f7f1e1;
+    --color-tarjeta: #ecdfc0;
+    --color-cabecera: #bc9963;
+    --color-cabecera-texto: #3d2b12;
+    --color-texto: #3d2b12;
+    --color-texto-suave: #6b5b3f;
+    --color-borde: #d8c79f;
+    --color-enlace: #6b4a1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-fondo: #1e1a14;
+      --color-tarjeta: #2a2419;
+      --color-cabecera: #8a6d45;
+      --color-cabecera-texto: #f7f1e1;
+      --color-texto: #f0e9d8;
+      --color-texto-suave: #c9bd9e;
+      --color-borde: #4a3f2c;
+      --color-enlace: #e0c48a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--color-cabecera);
+    color: var(--color-cabecera-texto);
+    padding: 28px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.5rem;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+  .tarjeta {
+    background: var(--color-tarjeta);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border: 1px solid var(--color-borde);
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: var(--color-texto);
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 16px 0 6px 0;
+    color: var(--color-texto);
+  }
+  p, li {
+    font-size: 0.92rem;
+    color: var(--color-texto);
+  }
+  ul {
+    margin: 6px 0;
+    padding-inline-start: 20px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  a {
+    color: var(--color-enlace);
+  }
+  .indice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .indice li {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  .nota {
+    font-size: 0.82rem;
+    color: var(--color-texto-suave);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 8px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--color-borde);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--color-texto-suave);
+  }
+  .idiomas { display:flex; flex-wrap:wrap; justify-content:center; gap:4px 12px; margin-top: 10px; font-size: 0.82rem; }
+  .idiomas a { color: var(--color-cabecera-texto); opacity: 0.85; }
+  .idiomas strong { opacity: 1; }
+  [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎣 Condizioni di acquisto e abbonamento di Capturia</h1>
+  <p>Ultimo aggiornamento: 9 ottobre 2026</p>
+  <nav class="idiomas"><a href="../" hreflang="es">Español</a> <a href="../en/" hreflang="en">English</a> <a href="../fr/" hreflang="fr">Français</a> <strong>Italiano</strong> <a href="../pt/" hreflang="pt">Português</a> <a href="../de/" hreflang="de">Deutsch</a> <a href="../ar/" hreflang="ar">العربية</a></nav>
+</header>
+
+<main>
+
+  <div class="tarjeta">
+    <h2>Indice</h2>
+    <ul class="indice">
+      <li><a href="#vendedor">1. Chi ti vende</a></li>
+      <li><a href="#planes">2. Piani e prezzi</a></li>
+      <li><a href="#prueba">3. Prova gratuita</a></li>
+      <li><a href="#renovacion">4. Rinnovo e annullamento di Premium</a></li>
+      <li><a href="#precios">5. Modifiche di prezzo</a></li>
+      <li><a href="#plus">6. Cosa significa "per sempre" in Plus</a></li>
+      <li><a href="#desistimiento">7. Recesso e rimborsi</a></li>
+      <li><a href="#cuenta">8. Acquisti e account</a></li>
+      <li><a href="#cambios">9. Modifiche a queste condizioni</a></li>
+      <li><a href="#ley">10. Legge applicabile</a></li>
+      <li><a href="#contacto">11. Contatti</a></li>
+    </ul>
+  </div>
+
+  <div class="tarjeta">
+    <p>Queste condizioni si applicano agli acquisti effettuati in <strong>Capturia</strong> (l'app di pesca per Android/iOS): il piano <strong>Plus</strong> (pagamento unico) e l'abbonamento <strong>Premium</strong>. Acquistando accetti queste condizioni, oltre a quelle dello store (Google Play o App Store) da cui paghi.</p>
+    <p class="nota">Queste condizioni sono disponibili in più lingue. In caso di discrepanza tra le versioni, prevale la versione spagnola.</p>
+  </div>
+
+  <div class="tarjeta" id="vendedor">
+    <h2>1. Chi ti vende</h2>
+    <p>Capturia è sviluppata da <strong>Rubén Álvarez Felgueroso</strong> (Capturia Spain), che puoi contattare a <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>.</p>
+    <p>Il pagamento viene sempre incassato dallo store da cui acquisti (<strong>Google Play</strong> o <strong>App Store</strong>), con il metodo di pagamento del tuo account. Capturia non riceve né conserva i dati della tua carta.</p>
+  </div>
+
+  <div class="tarjeta" id="planes">
+    <h2>2. Piani e prezzi</h2>
+    <ul><li><strong>Free:</strong> gratuito.</li><li><strong>Plus:</strong> pagamento unico. Sblocca le funzioni del piano Plus senza pagamenti periodici.</li><li><strong>Premium:</strong> abbonamento mensile con rinnovo automatico. Per sottoscriverlo serve avere Plus.</li><li><strong>Pro:</strong> status per professionisti, concesso su richiesta via email; non si acquista nell'app.</li></ul>
+    <p>Il prezzo che paghi è quello mostrato dallo store al momento dell'acquisto, nella tua valuta e con le imposte del tuo paese incluse (ad esempio l'IVA). Cosa include ogni piano è descritto nella schermata <em>Abbonamento</em> dell'app.</p>
+  </div>
+
+  <div class="tarjeta" id="prueba">
+    <h2>3. Prova gratuita</h2>
+    <p>Quando è offerta, chi si abbona a Premium per la prima volta può usufruire di un periodo di prova gratuito (ad esempio un mese). Alla fine della prova l'abbonamento diventa a pagamento e viene addebitato automaticamente, a meno che tu non lo annulli dallo store <strong>prima che la prova termini</strong>. Ogni persona può usufruire della prova una sola volta.</p>
+  </div>
+
+  <div class="tarjeta" id="renovacion">
+    <h2>4. Rinnovo e annullamento di Premium</h2>
+    <p>L'abbonamento Premium si rinnova automaticamente ogni mese e viene addebitato all'inizio di ogni periodo, finché non lo annulli.</p>
+    <p>Puoi annullarlo in qualsiasi momento dallo store (Google Play → Pagamenti e abbonamenti → Abbonamenti; App Store → Impostazioni → il tuo nome → Abbonamenti) oppure da <em>Abbonamento → Gestisci abbonamento</em> nell'app. Dopo l'annullamento mantieni Premium fino alla fine del periodo già pagato e non ti verrà addebitato altro. Se hai Plus torni a Plus; altrimenti a Free.</p>
+    <p class="nota">Eliminare l'app o il tuo account Capturia non annulla l'abbonamento: bisogna annullarlo nello store.</p>
+  </div>
+
+  <div class="tarjeta" id="precios">
+    <h2>5. Modifiche di prezzo</h2>
+    <p>Capturia può rivedere i propri prezzi, in particolare in modo <strong>periodico (ad esempio una volta all'anno)</strong>, per adeguarli all'andamento dei costi del servizio (server, archiviazione, commissioni degli store), alle variazioni delle imposte o all'inflazione, oppure quando vengono aggiunte funzioni rilevanti.</p>
+    <ul><li><strong>Abbonamento Premium:</strong> in caso di aumento ti avviseremo con almeno <strong>30 giorni di anticipo</strong> tramite lo store e/o l'app. Il nuovo prezzo si applicherà dal primo rinnovo successivo a tale termine e mai a un periodo già pagato. Se non sei d'accordo, puoi annullare l'abbonamento prima che si applichi, senza alcun costo. Se lo store richiede che tu accetti espressamente il nuovo prezzo e non lo fai, l'abbonamento terminerà alla fine del periodo in corso.</li><li><strong>Plus (pagamento unico):</strong> se l'hai già acquistato non ti verrà addebitato di nuovo. Le modifiche di prezzo riguardano solo i nuovi acquisti.</li><li><strong>Offerte e sconti:</strong> i prezzi promozionali sono temporanei e non danno diritto a mantenerli alla fine della promozione, salvo diversa indicazione nell'offerta.</li></ul>
+    <p>Le riduzioni di prezzo possono essere applicate senza preavviso.</p>
+  </div>
+
+  <div class="tarjeta" id="plus">
+    <h2>6. Cosa significa "per sempre" in Plus</h2>
+    <p>Plus si paga una sola volta e si mantiene finché hai il tuo account Capturia e l'app resta in funzione. Le funzioni e i limiti di ogni piano possono evolvere nel tempo (ad esempio per aggiungere miglioramenti); se i vantaggi di un piano a pagamento venissero ridotti in modo significativo, te lo comunicheremo in anticipo.</p>
+  </div>
+
+  <div class="tarjeta" id="desistimiento">
+    <h2>7. Recesso e rimborsi</h2>
+    <p>Come consumatore nell'Unione europea hai in genere 14 giorni per recedere da un acquisto a distanza. Tuttavia, trattandosi di contenuto digitale attivato al momento dell'acquisto, pagando <strong>chiedi espressamente che Plus o Premium vengano attivati subito e accetti di perdere, per questo, il diritto di recesso</strong> (articolo 16, lettera m), della direttiva 2011/83/UE e articolo 103.m del Regio Decreto Legislativo spagnolo 1/2007).</p>
+    <p>I rimborsi sono gestiti dallo store secondo le sue politiche (ad esempio Google Play consente di richiederli in alcuni casi entro le prime 48 ore). Se hai un problema con un acquisto, scrivici e ti aiuteremo. Ciò non limita i diritti che la legge ti riconosce se il servizio non funziona come descritto.</p>
+  </div>
+
+  <div class="tarjeta" id="cuenta">
+    <h2>8. Acquisti e account</h2>
+    <p>Il tuo acquisto è collegato al tuo account Capturia e al tuo account dello store. Se cambi telefono o reinstalli l'app, accedi con lo stesso account e usa <em>Ripristina acquisti</em> nella schermata Abbonamento.</p>
+  </div>
+
+  <div class="tarjeta" id="cambios">
+    <h2>9. Modifiche a queste condizioni</h2>
+    <p>Possiamo aggiornare queste condizioni. Se la modifica è rilevante, ti avviseremo nell'app con un preavviso ragionevole; le modifiche non si applicano ai periodi già pagati. La data dell'ultimo aggiornamento è indicata all'inizio di questa pagina.</p>
+  </div>
+
+  <div class="tarjeta" id="ley">
+    <h2>10. Legge applicabile</h2>
+    <p>Queste condizioni sono regolate dalla legge spagnola, fatti salvi i diritti riconosciuti dalle norme di tutela dei consumatori del tuo paese di residenza. Se sei un consumatore puoi rivolgerti ai tribunali del tuo domicilio.</p>
+  </div>
+
+  <div class="tarjeta" id="contacto">
+    <h2>11. Contatti</h2>
+    <p>Per qualsiasi domanda sui tuoi acquisti scrivici a <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>. Il trattamento dei tuoi dati è spiegato nell'<a href="../../it/">informativa sulla privacy</a>.</p>
+  </div>
+
+</main>
+
+<footer>
+  Capturia — Condizioni di acquisto e abbonamento
+</footer>
+
+</body>
+</html>
