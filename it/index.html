@@ -133,7 +133,7 @@
 
 <header>
   <h1>🎣 Informativa sulla privacy di Capturia</h1>
-  <p>Ultimo aggiornamento: 11 ottobre 2026</p>
+  <p>Ultimo aggiornamento: 14 ottobre 2026</p>
   <nav class="idiomas"><a href="../" hreflang="es">Español</a> <a href="../en/" hreflang="en">English</a> <a href="../fr/" hreflang="fr">Français</a> <strong>Italiano</strong> <a href="../pt/" hreflang="pt">Português</a> <a href="../de/" hreflang="de">Deutsch</a> <a href="../ar/" hreflang="ar">العربية</a></nav>
 </header>
 
@@ -179,13 +179,14 @@
     <ul>
       <li><strong>Registrazione:</strong> indirizzo e-mail e password, oppure il tuo account Google o Apple se scegli «Accedi con Google» o «Accedi con Apple». Se, accedendo con Apple, scegli di nascondere la tua e-mail, riceviamo solo l'indirizzo di inoltro anonimo che Apple ti assegna, non la tua e-mail reale. Non vediamo mai la tua password: è gestita in forma cifrata dal nostro fornitore di autenticazione, Supabase.</li>
       <li><strong>Profilo pubblico:</strong> nome utente, foto dell'avatar, una breve descrizione e i link che decidi di aggiungere tu stesso in «I miei link».</li>
+      <li><strong>La mia zona:</strong> se la compili in «Il mio Profilo», il paese e la città da cui provieni. Permette ad altri pescatori di trovarti con «Cerca per zona» in I miei compagni e viene mostrata solo se hai attivato «Visibile per altri utenti» nelle Impostazioni. È facoltativa e puoi cancellarla in qualsiasi momento.</li>
       <li><strong>Piano di abbonamento</strong> (Gratuito/Plus/Premium/Pro) e piattaforma da cui usi l'app (Android/iOS/web), per poterti offrire assistenza e per statistiche interne di utilizzo.</li>
     </ul>
 
     <h3>Contenuti che crei nell'app</h3>
     <ul>
       <li><strong>Spot di pesca:</strong> nome, tipo, foto e coordinate GPS del luogo (solo se attivi la posizione quando crei uno spot).</li>
-      <li><strong>Catture:</strong> specie, spot, foto del pesce, un video se decidi di aggiungerlo e dati ambientali del momento (marea, fase lunare, vento, stato del mare, ecc.) che inserisci tu stesso.</li>
+      <li><strong>Catture:</strong> specie, spot, foto del pesce, un video se decidi di aggiungerlo e dati ambientali del momento (marea, fase lunare, vento, stato del mare, ecc.) che inserisci tu stesso. Puoi anche compilare automaticamente il meteo e lo stato del mare con i pulsanti del meteo, in base allo spot (o alla tua posizione attuale, se scegli questa opzione e dai il permesso), alla data e all'ora; restano sempre modificabili.</li>
       <li><strong>Cappotti e grandi abboccate:</strong> registrazioni delle tue uscite di pesca (con o senza cattura), inclusa la descrizione che scrivi.</li>
       <li><strong>Specie personali:</strong> se aggiungi una specie che non è nel catalogo ufficiale, compresa la sua foto.</li>
     </ul>
@@ -195,6 +196,7 @@
     <ul>
       <li><strong>Chat di gruppo:</strong> i messaggi che scrivi nei gruppi di cui fai parte e le catture che vi condividi. Sono visibili ai membri del gruppo.</li>
       <li><strong>Note private:</strong> messaggi singoli che invii a un altro utente (compagno o membro di un gruppo in comune). A seconda del tipo, possono contenere un <strong>numero di telefono</strong> e, se vuoi, un indirizzo email (scheda contatto), un breve testo o un punto d'incontro con la sua posizione. Il tuo numero non viene salvato nel profilo: è presente solo nella nota che decidi di inviare.</li>
+      <li><strong>Compagni e richieste:</strong> l'elenco degli utenti che aggiungi come compagni e di quelli che hanno aggiunto te, con lo stato di ogni richiesta (in attesa, accettata o rifiutata). La persona che aggiungi riceve un avviso e vede il tuo nome utente e il tuo avatar finché non accetta o rifiuta la richiesta.</li>
       <li><strong>Uscite:</strong> data e ora, luogo (e la sua posizione, se la aggiungi), un commento facoltativo, l'elenco delle persone invitate e la risposta di ciascuna (ci sono / non posso).</li>
     </ul>
     <p class="nota">Questi dati sono visibili solo a te e alla persona o alle persone a cui li invii. Inviarli è sempre un'azione tua e facoltativa.</p>
@@ -211,6 +213,7 @@
       <li><strong>Notifiche:</strong> solo se le attivi nelle Impostazioni, un identificativo del telefono generato da Firebase Cloud Messaging (servizio di Google), associato al tuo account e usato unicamente per inviarti gli avvisi. Viene eliminato quando le disattivi, esci dall'account su quel telefono o elimini il tuo account.</li>
       <li><strong>Foto verificate:</strong> un indicatore (sì/no) che segnala se ogni foto di una cattura è stata scattata con la fotocamera dall'app, per mostrare il badge di verifica.</li>
       <li><strong>Identificazione delle specie («Che pesce è?»):</strong> se usi questa funzione, la foto scelta viene inviata, ridotta e senza metadati (EXIF), al nostro fornitore di intelligenza artificiale perché proponga la specie, insieme al paese, alla regione e al tipo di acqua indicati nel tuo profilo, per affinare il risultato. Per darti la <strong>misura minima indicativa</strong> della tua zona viene inviata anche, se disponibile, una <strong>posizione approssimativa</strong> (quella dello spot della cattura o, solo se hai già dato all'app il permesso di localizzazione, quella del telefono in quel momento), arrotondata a circa 1 km. Né la foto né la posizione vengono conservate sui nostri server o su quelli del fornitore dopo l'analisi, e non vengono usate per addestrare modelli. Di ogni uso conserviamo solo la data e la specie proposta, per controllare il numero di identificazioni del tuo piano.</li>
+      <li><strong>Previsioni di pesca:</strong> per calcolare la previsione di uno spot, il nostro server consulta il meteo, le maree e lo stato del mare inviando solo le coordinate di quello spot al servizio meteorologico Open-Meteo, senza il tuo nome, la tua email né alcun tuo identificativo. Con il piano Premium, la previsione tiene conto anche degli orari delle tue catture in quello spot; questo calcolo avviene sul tuo telefono e le tue catture non vengono inviate a nessuno per questo. L'ultimo spot consultato viene ricordato solo sul tuo dispositivo.</li>
       <li><strong>Prova gratuita di Plus:</strong> se la attivi, conserviamo le date di inizio e fine e un <strong>identificatore cifrato del dispositivo</strong> (un'impronta irreversibile dell'identificatore che il sistema assegna all'app sul tuo telefono; mai l'identificatore in chiaro), solo per impedire che la prova venga ripetuta sullo stesso telefono con altri account. Base giuridica: legittimo interesse a prevenire abusi (art. 6.1.f GDPR). Viene conservato finché la prova è offerta e, al massimo, finché non chiedi l'eliminazione del tuo account.</li>
     </ul>
 
@@ -236,6 +239,9 @@
         <tr><td>Recapitare agli altri utenti i messaggi, le note private e gli inviti alle uscite che decidi di inviare</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
         <tr><td>Inviarti notifiche sul telefono (invii, note, uscite, inviti e nuovi compagni), se le attivi</td><td>Consenso, quando le attivi (art. 6.1.a)</td></tr>
         <tr><td>Identificare la specie di una foto con l’intelligenza artificiale («Che pesce è?»), su tua richiesta</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+        <tr><td>Calcolare la previsione di pesca e compilare automaticamente il meteo e lo stato del mare di una registrazione, quando lo chiedi</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+        <tr><td>Gestire i tuoi compagni e le richieste di compagno</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+        <tr><td>Mostrare la tua zona (paese e città) nelle ricerche di altri utenti</td><td>Consenso, compilandola e avendo attivato «Visibile per altri utenti» (art. 6.1.a)</td></tr>
       </tbody>
     </table>
   </div>
@@ -257,6 +263,7 @@
       <li><strong>Google (Firebase Cloud Messaging)</strong>, solo se attivi le notifiche: riceve l'identificativo del telefono e il testo dell'avviso (ad esempio, «Pepe ti ha inviato una cattura»), mai il contenuto di ciò che è stato inviato. Società con sede negli Stati Uniti.</li>
       <li><strong>Anthropic</strong> (intelligenza artificiale Claude), solo quando usi «Che pesce è?»: riceve la foto da identificare, senza metadati, la zona di pesca del tuo profilo (paese, regione e tipo di acqua) e, se disponibile, una posizione approssimativa (arrotondata a circa 1 km) per la misura minima indicativa; mai il tuo nome né la tua email. Non conserva la foto né la posizione e non le usa per addestrare i suoi modelli. Società con sede negli Stati Uniti.</li>
     </ul>
+    <p>Usiamo anche <strong>Open-Meteo</strong> (servizio di dati meteorologici e marini) per la previsione di pesca e la compilazione automatica di meteo e mare: dal nostro server riceve solo le coordinate consultate (quelle dello spot o, se lo scegli compilando il meteo, la tua posizione attuale) e le date, mai dati che ti identifichino.</p>
     <p>Inoltre, i messaggi di gruppo, le note private (compreso il telefono o l'email che inserisci) e le uscite vengono mostrati agli utenti a cui decidi di inviarli. Sei tu a fare l'invio; Capturia non condivide questi dati con nessun altro.</p>
     <p>Quando questi fornitori si trovano al di fuori dello Spazio economico europeo, il trasferimento avviene nel rispetto delle garanzie previste dal GDPR. In particolare, il nostro database (Supabase) è ospitato nel Regno Unito, Paese che dispone di una decisione di adeguatezza della Commissione europea: ciò significa che è considerato in grado di offrire un livello di protezione equivalente a quello dell'UE, per cui i dati possono esservi trasferiti senza garanzie aggiuntive. Per gli altri fornitori al di fuori dell'UE/SEE (come RevenueCat, negli Stati Uniti), il trasferimento si basa sulle clausole contrattuali tipo della Commissione europea.</p>
   </div>
