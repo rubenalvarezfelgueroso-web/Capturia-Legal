@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="capturia-manual-version" content="2026-10-19">
+<meta name="capturia-manual-version" content="2026-10-28">
 <title>Capturia user guide</title>
 <style>
   :root {
@@ -137,15 +137,14 @@
 
 <header>
   <h1>🎣 Capturia user guide</h1>
-  <p>Updated on 26 September 2026</p>
+  <p>Updated on 28 October 2026</p>
   <nav class="idiomas"><a href="es.html" hreflang="es">Español</a> <a href="en.html" hreflang="en" class="activo">English</a> <a href="fr.html" hreflang="fr">Français</a> <a href="it.html" hreflang="it">Italiano</a> <a href="pt.html" hreflang="pt">Português</a> <a href="de.html" hreflang="de">Deutsch</a> <a href="ar.html" hreflang="ar">العربية</a></nav>
 </header>
 
 <!-- Contenido del manual: la app lo descarga y muestra este <main> dentro de su propia pantalla
      (con copia guardada para leerlo sin conexión). Generado a partir del manual en Claude Docs. -->
 <main id="contenido-manual">
-
-  <div class="tarjeta">
+<div class="tarjeta">
     <h2 id="indice">Contents</h2>
     <ul class="indice">
       <li><a href="#welcome">Welcome</a></li>
@@ -207,6 +206,7 @@
     <p>From Catches, tap <strong>+🎣</strong>, next to the search bar (or Hallelujah! in the bottom bar), to record a fish. You can add:</p>
     <ul>
       <li><strong>Species</strong> and <strong>spot</strong> (required), <strong>weight</strong> and <strong>length</strong>.</li>
+      <li><strong>Minimum size</strong>: once you’ve chosen the species and spot, below the length you’ll see the minimum size for that area, in red if your fish is below it (see Species).</li>
       <li><strong>Photos or video</strong> of the catch.</li>
       <li><strong>Multiple catch</strong>: if you caught several fish at once, record them as a single entry; in that case you enter the <strong>quantity</strong> instead of the length.</li>
       <li><strong>Lure and bait</strong> (below the quantity or length): pick the ones you used from your Equipment list. They are optional; if you haven't created any yet, the field tells you to do so in Equipment.</li>
@@ -232,8 +232,24 @@
   </div>
   <div class="tarjeta">
     <h2 id="species">Species</h2>
-    <p>The Species screen shows <strong>your catalogue</strong>: the species you have on your phone (the five starter ones, the ones you add from the official catalogue and the ones you create yourself). It syncs with your cloud copy manually or automatically, depending on Settings. The full <strong>official catalogue</strong> of Capturia, with a guide minimum size, has its own screen (from the Plus plan), where you add species to yours.</p>
-    <p>Use the <strong>magnifying glass</strong>, next to "All species", to search by common or scientific name. Tap a card to open <strong>View species</strong>: at the top you have <strong>Edit</strong>, <strong>Delete</strong> and the icon to send it to a buddy. When you delete a species you get the same prompt as in Spots and Catches, with the option to delete it from the cloud too; it cannot be deleted if it has catches recorded. For official catalogue species you can only change the photo (your personal photo).</p>
+    <p>The Species screen shows <strong>your catalogue</strong>: the species on your phone (the five you start with, the ones you add from the public list and the ones you create yourself). Each card shows the photo, the type, how many catches you have and the <strong>minimum size for your area</strong>. It syncs with your cloud copy manually or automatically, depending on Settings.</p>
+    <p>Use the <strong>magnifying glass</strong>, next to “All species”, to search by common or scientific name. Tap a card to open <strong>View species</strong>: at the top you have <strong>Edit</strong>, <strong>Delete</strong> and the icon to send it to a buddy. Deleting a species shows the same notice as Spots and Catches, with the option to delete it from the cloud too. If it has catches, they are deleted with it: the app tells you how many and asks you to type the confirmation word.</p>
+    <h3>Public species list (official catalogue)</h3>
+    <p>This is Capturia’s official catalogue, reviewed by the team and with a photo of each species. It’s in the menu (☰) &gt; Data &gt; <strong>🐟 Public species list</strong>, from the Plus plan.</p>
+    <ul>
+      <li><strong>Area</strong>: the list is filtered by area (European Atlantic, Cantabrian Sea, Mediterranean…). Yours is selected when you open it; you can pick another one or “All zones”. You can also search by name and filter by type.</li>
+      <li><strong>More information</strong>: tap a species’ name (or the ▾ arrow) to expand its card, with a large photo, the name, the scientific name, the type, where it lives and the minimum size. <strong>📖 In depth</strong> opens its full profile: key facts, how to recognise it, where it lives, what it eats, how it breeds, how to fish for it and a fun fact. If it has no profile yet, the button is dimmed.</li>
+      <li><strong>Add to your catalogue</strong>: tap ⊕. You get your own copy, which you can edit or remove whenever you like. Species you already have don’t appear in the list; turn on “Also show the ones I already have” to see them marked with ✓.</li>
+    </ul>
+    <p><strong>Official species or your own?</strong> If the species is in the public list, add it from there: it comes with its photo, its name in your language, its scientific name and its minimum sizes by area, kept up to date by the Capturia team. Only create one yourself if it isn’t there; if you make it public, you propose it for the catalogue and the team reviews it. When you choose an official species in a catch (also with What fish is it?), it’s added to your catalogue automatically, without duplicates if you already had it. If the catalogue changes the photo of a species you have, editing it offers <strong>Use the official photo</strong>: your photo is never changed unless you choose to.</p>
+    <h3>Minimum size for your area</h3>
+    <p>The same species can have different minimum sizes depending on where it’s caught (for example, the axillary seabream: 17 cm in general and 25 cm in the Cantabrian Sea). That’s why official species have a size for each area, and the <strong>In depth</strong> profile shows all of them, with yours highlighted.</p>
+    <ul>
+      <li><strong>Your area</strong> comes from the country and region you chose when you started. Change it in Settings &gt; <strong>My fishing area</strong>.</li>
+      <li><strong>In a catch</strong>, below the length you’ll see the minimum size for the chosen spot (its area is worked out from the spot’s location). If the length or weight is below it, the notice turns red.</li>
+      <li>The area is worked out on your phone and is not sent anywhere.</li>
+    </ul>
+    <p>Sizes are a guide only: always check the current regulations for your area. Species you create yourself have a single size, the one you type.</p>
     <p>How many species you can have in your catalogue depends on your plan (see Plans). Official catalogue names are shown in your language when a translation exists; species you create are shown as you wrote them.</p>
   </div>
   <div class="tarjeta">
@@ -298,6 +314,7 @@
       <li><strong>Colour customisation</strong>: colour of the header and bottom bar, bar icons in white or black (all plans) and card colour (from Plus). "Restore original colours" brings back the usual ones.</li>
       <li><strong>App background</strong>: predesigned backgrounds or a colour (from Plus), or your own photo from the camera or gallery (from Premium). The predesigned backgrounds come from Pixabay.</li>
       <li><strong>Automatic upload</strong> to the cloud (from Plus). If you don't turn it on, you can save and restore your copy manually from the side menu &gt; Tools or from Home.</li>
+      <li><strong>My fishing area</strong>: the area used to show minimum sizes. By default it’s “Automatic”, based on the country and region you chose when you started. It’s only saved on this phone.</li>
     </ul>
     <p><strong>Notifications</strong>: they have their own card in Settings (tap it to expand it), with a <strong>main switch</strong> and, below it, one switch per type of alert. Everything is on by default. Your phone alerts you even when Capturia is closed when <strong>your best fishing hour starts</strong> (days rated 3★ or more at your main Forecast spot; all plans) and, from Plus, when a buddy sends you something (catch, spot, species or big bite), you get a private note or a meetup, someone adds you as a buddy or invites you to a group, or one of your species is reviewed. From Plus you choose which of these alerts you want; that choice is saved to your account and applies to all your phones. <strong>If you turn off the main switch, you get no alerts at all</strong>, not even the best-hour one. When you sign out, that phone stops receiving them.</p>
   </div>
@@ -312,7 +329,6 @@
     <p><strong>Can I use Capturia offline?</strong> Yes, to record and look up your data. Syncing with the cloud (uploads, backups and pending deletions) happens by itself as soon as you are back online.</p>
     <p><strong>What does the ✅ on a photo mean?</strong> That the photo was taken with the camera from Capturia when the catch was recorded, not uploaded from the gallery. It is not absolute proof, but it is a good sign that the photo is genuine.</p>
   </div>
-
 </main>
 
 <footer>

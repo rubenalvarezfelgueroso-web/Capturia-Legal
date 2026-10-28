@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="capturia-manual-version" content="2026-10-19">
+<meta name="capturia-manual-version" content="2026-10-28">
 <title>Manual do utilizador do Capturia</title>
 <style>
   :root {
@@ -137,15 +137,14 @@
 
 <header>
   <h1>🎣 Manual do utilizador do Capturia</h1>
-  <p>Atualizado a 26 de setembro de 2026</p>
+  <p>Atualizado a 28 de outubro de 2026</p>
   <nav class="idiomas"><a href="es.html" hreflang="es">Español</a> <a href="en.html" hreflang="en">English</a> <a href="fr.html" hreflang="fr">Français</a> <a href="it.html" hreflang="it">Italiano</a> <a href="pt.html" hreflang="pt" class="activo">Português</a> <a href="de.html" hreflang="de">Deutsch</a> <a href="ar.html" hreflang="ar">العربية</a></nav>
 </header>
 
 <!-- Contenido del manual: la app lo descarga y muestra este <main> dentro de su propia pantalla
      (con copia guardada para leerlo sin conexión). Generado a partir del manual en Claude Docs. -->
 <main id="contenido-manual">
-
-  <div class="tarjeta">
+<div class="tarjeta">
     <h2 id="indice">Índice</h2>
     <ul class="indice">
       <li><a href="#bem-vindo">Bem-vindo</a></li>
@@ -207,6 +206,7 @@
     <p>Em Capturas, toca em <strong>+🎣</strong>, ao lado da pesquisa (ou Aleluia! na barra inferior), para registar um peixe. Podes adicionar:</p>
     <ul>
       <li><strong>Espécie</strong> e <strong>pesqueiro</strong> (obrigatórios), <strong>peso</strong> e <strong>medida</strong>.</li>
+      <li><strong>Tamanho mínimo</strong>: escolhidos a espécie e o pesqueiro, por baixo da medida vês o tamanho mínimo dessa zona, a vermelho se o teu peixe ficar abaixo (ver Espécies).</li>
       <li><strong>Fotos ou vídeo</strong> da captura.</li>
       <li><strong>Captura múltipla</strong>: se apanhaste vários peixes de uma vez, regista-os como uma única entrada; nesse caso, em vez da medida indicas a <strong>quantidade</strong>.</li>
       <li><strong>Amostra e isco</strong> (por baixo da quantidade ou da medida): escolhe os que usaste da tua lista de Equipamento. São opcionais; se ainda não criaste nenhum, o campo indica-te que o faças em Equipamento.</li>
@@ -232,8 +232,24 @@
   </div>
   <div class="tarjeta">
     <h2 id="especies">Espécies</h2>
-    <p>O ecrã Espécies mostra <strong>o teu catálogo</strong>: as espécies que tens no telemóvel (as cinco iniciais, as que adicionares do catálogo oficial e as que criares tu). Sincroniza com a tua cópia na nuvem à mão ou automaticamente, conforme as Definições. O <strong>catálogo oficial</strong> completo do Capturia, com tamanho mínimo indicativo, tem o seu próprio ecrã (a partir do plano Plus), de onde adicionas espécies ao teu.</p>
-    <p>Usa a <strong>lupa</strong>, ao lado de «Todas as espécies», para procurar pelo nome comum ou científico. Toca num cartão para abrir <strong>Ver espécie</strong>: em cima tens <strong>Editar</strong>, <strong>Eliminar</strong> e o ícone para a enviar a um companheiro. Ao eliminar uma espécie aparece o mesmo aviso que em Pesqueiros e Capturas, com a opção de a eliminar também da nuvem; não pode ser eliminada se tiver capturas registadas. Nas espécies do catálogo oficial só podes mudar a foto (a tua foto personalizada).</p>
+    <p>O ecrã Espécies mostra <strong>o teu catálogo</strong>: as espécies que tens no telemóvel (as cinco iniciais, as que adicionares da lista pública e as que criares tu). Cada cartão mostra a foto, o tipo, quantas capturas tens e o <strong>tamanho mínimo da tua zona</strong>. Sincroniza com a tua cópia na nuvem à mão ou automaticamente, conforme as Definições.</p>
+    <p>Usa a <strong>lupa</strong>, ao lado de «Todas as espécies», para procurar pelo nome comum ou científico. Toca num cartão para abrir <strong>Ver espécie</strong>: em cima tens <strong>Editar</strong>, <strong>Eliminar</strong> e o ícone para a enviar a um companheiro. Ao eliminar uma espécie aparece o mesmo aviso que em Pesqueiros e Capturas, com a opção de a apagar também da nuvem. Se tiver capturas, são apagadas com ela: a app diz-te quantas e pede-te que escrevas a palavra de confirmação.</p>
+    <h3>Lista pública de espécies (catálogo oficial)</h3>
+    <p>É o catálogo oficial do Capturia, revisto pela equipa e com uma foto de cada espécie. Está no menu (☰) &gt; Dados &gt; <strong>🐟 Lista pública de espécies</strong>, a partir do plano Plus.</p>
+    <ul>
+      <li><strong>Zona</strong>: a lista filtra-se por zona (Atlântico europeu, Cantábrico, Mediterrâneo…). Ao abrir aparece a tua; podes escolher outra ou «Todas as zonas». Também podes procurar pelo nome e filtrar por tipo.</li>
+      <li><strong>Informação alargada</strong>: toca no nome de uma espécie (ou na seta ▾) para abrir o seu cartão, com a foto em grande, o nome, o nome científico, o tipo, onde vive e o tamanho mínimo. <strong>📖 Mais a fundo</strong> abre a ficha completa: dados rápidos, como a reconhecer, onde vive, o que come, como se reproduz, como a pescar e uma curiosidade. Se ainda não tiver ficha, o botão aparece esbatido.</li>
+      <li><strong>Adicionar ao teu catálogo</strong>: toca em ⊕. Ficas com uma cópia tua, que podes editar ou retirar quando quiseres. As que já tens não aparecem; ativa «Mostrar também as que já tenho» para as veres com ✓.</li>
+    </ul>
+    <p><strong>A do catálogo oficial ou uma tua?</strong> Se a espécie está na lista pública, adiciona-a a partir daí: chega com a foto, o nome no teu idioma, o nome científico e os tamanhos por zona, mantidos em dia pela equipa do Capturia. Cria uma à mão só se não estiver lá; se a marcares como pública, propões-na para o catálogo e a equipa revê-a. Quando escolhes numa captura uma espécie do catálogo oficial (também com Que peixe é?), passa sozinha para o teu catálogo, sem duplicar se já a tinhas. Se o catálogo mudar a foto de uma espécie que tens, ao editá-la oferece-te <strong>Usar a foto oficial</strong>: a tua foto nunca muda se não fores tu a escolher.</p>
+    <h3>Tamanho mínimo conforme a tua zona</h3>
+    <p>A mesma espécie pode ter tamanhos mínimos diferentes conforme o local de pesca (por exemplo, o besugo: 17 cm em geral e 25 cm no Cantábrico). Por isso as espécies oficiais têm um tamanho por zona, e a ficha <strong>Mais a fundo</strong> mostra-os todos, com o teu destacado.</p>
+    <ul>
+      <li><strong>A tua zona</strong> vem do país e da região que escolheste ao começar. Muda-a em Definições &gt; <strong>A minha zona de pesca</strong>.</li>
+      <li><strong>Numa captura</strong>, por baixo da medida vês o tamanho mínimo do pesqueiro escolhido (a zona calcula-se pela sua localização). Se a medida ou o peso ficarem abaixo, o aviso fica a vermelho.</li>
+      <li>A zona calcula-se no telemóvel e não é enviada para lado nenhum.</li>
+    </ul>
+    <p>Os tamanhos são indicativos: confirma sempre a regulamentação em vigor na tua zona. As espécies que crias têm um só tamanho, o que escreveres.</p>
     <p>Quantas espécies podes ter no teu catálogo depende do teu plano (ver Planos). Os nomes do catálogo oficial aparecem no teu idioma quando há tradução; as espécies que crias aparecem tal como as escreveste.</p>
   </div>
   <div class="tarjeta">
@@ -298,6 +314,7 @@
       <li><strong>Personalização de cores</strong>: cor do cabeçalho e da barra inferior, ícones da barra em branco ou preto (todos os planos) e cor dos cartões (a partir do Plus). «Repor cores originais» volta às de sempre.</li>
       <li><strong>Fundo da app</strong>: fundos predefinidos ou uma cor (a partir do Plus), ou a tua própria foto da câmara ou da galeria (a partir do Premium). Os fundos predefinidos vêm do Pixabay.</li>
       <li><strong>Envio automático</strong> para a nuvem (a partir do Plus). Se não o ativares, podes guardar e recuperar a tua cópia à mão no menu lateral &gt; Ferramentas ou no Início.</li>
+      <li><strong>A minha zona de pesca</strong>: a zona usada para mostrar os tamanhos mínimos. Por defeito é «Automática», conforme o país e a região que escolheste ao começar. Só fica guardada neste telemóvel.</li>
     </ul>
     <p><strong>Notificações</strong>: têm o seu próprio cartão nas Definições (toca para o abrir), com um <strong>interruptor geral</strong> e, por baixo, um por cada tipo de aviso. Vem tudo ativado. O telemóvel avisa-te mesmo com o Capturia fechado quando <strong>começa a tua melhor hora de pesca</strong> (dias com 3★ ou mais no teu pesqueiro principal da Previsão; todos os planos) e, a partir do Plus, quando um companheiro te envia algo (captura, pesqueiro, espécie ou grande fisgada), recebes uma nota privada ou um encontro, alguém te adiciona como companheiro ou te convida para um grupo, ou é revista uma espécie tua. A partir do Plus escolhes quais destes avisos queres receber; essa escolha fica guardada na tua conta e vale para todos os teus telemóveis. <strong>Se desligares o interruptor geral, não recebes nenhum aviso</strong>, nem o da melhor hora. Ao terminar sessão esse telemóvel deixa de as receber.</p>
   </div>
@@ -312,7 +329,6 @@
     <p><strong>Posso usar o Capturia sem ligação?</strong> Sim, para registar e consultar os teus dados. A sincronização com a nuvem (envios, cópias e apagamentos pendentes) faz-se sozinha assim que recuperas a ligação.</p>
     <p><strong>O que significa o ✅ numa foto?</strong> Que a foto foi tirada com a câmara a partir do Capturia no momento de registar a captura, e não carregada da galeria. Não é uma prova absoluta, mas é um bom sinal de que a foto é autêntica.</p>
   </div>
-
 </main>
 
 <footer>

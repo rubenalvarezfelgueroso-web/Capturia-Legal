@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="capturia-manual-version" content="2026-10-19">
+<meta name="capturia-manual-version" content="2026-10-28">
 <title>Manuale d&#x27;uso di Capturia</title>
 <style>
   :root {
@@ -137,15 +137,14 @@
 
 <header>
   <h1>🎣 Manuale d'uso di Capturia</h1>
-  <p>Aggiornato il 26 settembre 2026</p>
+  <p>Aggiornato il 28 ottobre 2026</p>
   <nav class="idiomas"><a href="es.html" hreflang="es">Español</a> <a href="en.html" hreflang="en">English</a> <a href="fr.html" hreflang="fr">Français</a> <a href="it.html" hreflang="it" class="activo">Italiano</a> <a href="pt.html" hreflang="pt">Português</a> <a href="de.html" hreflang="de">Deutsch</a> <a href="ar.html" hreflang="ar">العربية</a></nav>
 </header>
 
 <!-- Contenido del manual: la app lo descarga y muestra este <main> dentro de su propia pantalla
      (con copia guardada para leerlo sin conexión). Generado a partir del manual en Claude Docs. -->
 <main id="contenido-manual">
-
-  <div class="tarjeta">
+<div class="tarjeta">
     <h2 id="indice">Indice</h2>
     <ul class="indice">
       <li><a href="#benvenuto">Benvenuto</a></li>
@@ -207,6 +206,7 @@
     <p>Da Catture, tocca <strong>+🎣</strong>, accanto alla ricerca (o Alleluia! nella barra inferiore), per registrare un pesce. Puoi aggiungere:</p>
     <ul>
       <li><strong>Specie</strong> e <strong>spot</strong> (obbligatori), <strong>peso</strong> e <strong>misura</strong>.</li>
+      <li><strong>Taglia minima</strong>: scelti la specie e lo spot, sotto la misura vedi la taglia minima di quella zona, in rosso se il tuo pesce è sotto (vedi Specie).</li>
       <li><strong>Foto o video</strong> della cattura.</li>
       <li><strong>Cattura multipla</strong>: se hai preso più pesci insieme, registrali come un'unica voce; in questo caso, al posto della misura si indica la <strong>quantità</strong>.</li>
       <li><strong>Artificiale ed esca</strong> (sotto la quantità o la misura): scegli quelli usati dalla tua lista Attrezzatura. Sono facoltativi; se non ne hai ancora creato nessuno, il campo ti indica di farlo in Attrezzatura.</li>
@@ -232,8 +232,24 @@
   </div>
   <div class="tarjeta">
     <h2 id="specie">Specie</h2>
-    <p>La schermata Specie mostra <strong>il tuo catalogo</strong>: le specie che hai sul telefono (le cinque iniziali, quelle che aggiungi dal catalogo ufficiale e quelle che crei tu). Si sincronizza con la tua copia nel cloud a mano o in automatico, secondo le Impostazioni. Il <strong>catalogo ufficiale</strong> completo di Capturia, con una misura minima indicativa, ha una sua schermata (dal piano Plus), da cui aggiungi specie al tuo.</p>
-    <p>Usa la <strong>lente</strong>, accanto a «Tutte le specie», per cercare per nome comune o scientifico. Tocca una scheda per aprire <strong>Vedi specie</strong>: in alto trovi <strong>Modifica</strong>, <strong>Elimina</strong> e l'icona per inviarla a un compagno. Eliminando una specie compare lo stesso avviso di Spot e Catture, con l'opzione di eliminarla anche dal cloud; non si può eliminare se ha catture registrate. Per le specie del catalogo ufficiale puoi cambiare solo la foto (la tua foto personalizzata).</p>
+    <p>La schermata Specie mostra <strong>il tuo catalogo</strong>: le specie che hai sul telefono (le cinque iniziali, quelle che aggiungi dall’elenco pubblico e quelle che crei tu). Ogni scheda mostra la foto, il tipo, quante catture hai e la <strong>taglia minima della tua zona</strong>. Si sincronizza con la tua copia nel cloud a mano o in automatico, secondo le Impostazioni.</p>
+    <p>Usa la <strong>lente</strong>, accanto a «Tutte le specie», per cercare per nome comune o scientifico. Tocca una scheda per aprire <strong>Vedi specie</strong>: in alto hai <strong>Modifica</strong>, <strong>Elimina</strong> e l’icona per inviarla a un compagno. Eliminando una specie compare lo stesso avviso di Spot e Catture, con l’opzione di eliminarla anche dal cloud. Se ha delle catture, vengono eliminate con lei: l’app ti dice quante e ti chiede di scrivere la parola di conferma.</p>
+    <h3>Elenco pubblico delle specie (catalogo ufficiale)</h3>
+    <p>È il catalogo ufficiale di Capturia, controllato dal team e con una foto di ogni specie. Si trova nel menu (☰) &gt; Dati &gt; <strong>🐟 Elenco pubblico delle specie</strong>, dal piano Plus.</p>
+    <ul>
+      <li><strong>Zona</strong>: l’elenco si filtra per zona (Atlantico europeo, Mar Cantabrico, Mediterraneo…). All’apertura è scelta la tua; puoi sceglierne un’altra o «Tutte le zone». Puoi anche cercare per nome e filtrare per tipo.</li>
+      <li><strong>Informazioni ampliate</strong>: tocca il nome di una specie (o la freccia ▾) per aprire la sua scheda, con la foto grande, il nome, il nome scientifico, il tipo, dove vive e la taglia minima. <strong>📖 Approfondisci</strong> apre la scheda completa: dati principali, come riconoscerla, dove vive, cosa mangia, come si riproduce, come pescarla e una curiosità. Se non ha ancora la scheda, il pulsante appare sbiadito.</li>
+      <li><strong>Aggiungere al tuo catalogo</strong>: tocca ⊕. Ottieni una tua copia, che puoi modificare o togliere quando vuoi. Quelle che hai già non compaiono; attiva «Mostra anche quelle che ho già» per vederle con ✓.</li>
+    </ul>
+    <p><strong>Quella del catalogo ufficiale o una tua?</strong> Se la specie è nell’elenco pubblico, aggiungila da lì: arriva con la foto, il nome nella tua lingua, il nome scientifico e le taglie per zona, aggiornate dal team di Capturia. Creane una a mano solo se non c’è; se la rendi pubblica, la proponi per il catalogo e il team la controlla. Quando in una cattura scegli una specie del catalogo ufficiale (anche con Che pesce è?), passa da sola nel tuo catalogo, senza doppioni se l’avevi già. Se il catalogo cambia la foto di una specie che hai, modificandola ti propone <strong>Usa la foto ufficiale</strong>: la tua foto non cambia mai se non lo scegli tu.</p>
+    <h3>Taglia minima secondo la tua zona</h3>
+    <p>La stessa specie può avere taglie minime diverse a seconda di dove si pesca (per esempio, il pagello bastardo: 17 cm in generale e 25 cm nel Mar Cantabrico). Per questo le specie ufficiali hanno una taglia per zona, e la scheda <strong>Approfondisci</strong> le mostra tutte, con la tua evidenziata.</p>
+    <ul>
+      <li><strong>La tua zona</strong> deriva dal paese e dalla regione scelti all’inizio. La cambi in Impostazioni &gt; <strong>La mia zona di pesca</strong>.</li>
+      <li><strong>In una cattura</strong>, sotto la misura vedi la taglia minima dello spot scelto (la zona si calcola dalla sua posizione). Se la misura o il peso sono inferiori, l’avviso diventa rosso.</li>
+      <li>La zona si calcola sul telefono e non viene inviata da nessuna parte.</li>
+    </ul>
+    <p>Le taglie sono indicative: controlla sempre la normativa vigente nella tua zona. Le specie che crei tu hanno una sola taglia, quella che scrivi.</p>
     <p>Quante specie puoi avere nel tuo catalogo dipende dal tuo piano (vedi Piani). I nomi del catalogo ufficiale si vedono nella tua lingua quando esiste una traduzione; le specie che crei tu si vedono come le hai scritte.</p>
   </div>
   <div class="tarjeta">
@@ -298,6 +314,7 @@
       <li><strong>Personalizzazione dei colori</strong>: colore dell'intestazione e della barra inferiore, icone della barra bianche o nere (tutti i piani) e colore delle schede (dal Plus). «Ripristina i colori originali» torna a quelli di sempre.</li>
       <li><strong>Sfondo dell'app</strong>: sfondi predefiniti o un colore (dal Plus), oppure la tua foto dalla fotocamera o dalla galleria (dal Premium). Gli sfondi predefiniti provengono da Pixabay.</li>
       <li><strong>Caricamento automatico</strong> nel cloud (dal Plus). Se non lo attivi, puoi salvare e recuperare la tua copia a mano dal menu laterale &gt; Strumenti o dalla Home.</li>
+      <li><strong>La mia zona di pesca</strong>: la zona usata per mostrare le taglie minime. Per impostazione predefinita è «Automatica», in base al paese e alla regione scelti all’inizio. Salvata solo su questo telefono.</li>
     </ul>
     <p><strong>Notifiche</strong>: hanno una scheda tutta loro in Impostazioni (toccala per aprirla), con un <strong>interruttore generale</strong> e, sotto, uno per ogni tipo di avviso. È tutto attivo per impostazione predefinita. Il telefono ti avvisa anche con Capturia chiusa quando <strong>inizia la tua ora migliore di pesca</strong> (giorni con 3★ o più nel tuo luogo principale della Previsione; tutti i piani) e, da Plus, quando un compagno ti invia qualcosa (cattura, luogo, specie o grande abboccata), ti arriva una nota privata o un ritrovo, qualcuno ti aggiunge come compagno o ti invita in un gruppo, o viene revisionata una tua specie. Da Plus scegli quali di questi avvisi ricevere; la scelta si salva nel tuo account e vale per tutti i tuoi telefoni. <strong>Se spegni l'interruttore generale, non ti arriva nessun avviso</strong>, nemmeno quello dell'ora migliore. Uscendo dall'account quel telefono smette di riceverle.</p>
   </div>
@@ -312,7 +329,6 @@
     <p><strong>Posso usare Capturia offline?</strong> Sì, per registrare e consultare i tuoi dati. La sincronizzazione con il cloud (caricamenti, backup ed eliminazioni in sospeso) avviene da sola appena torna la connessione.</p>
     <p><strong>Cosa significa il ✅ su una foto?</strong> Che la foto è stata scattata con la fotocamera da Capturia al momento di registrare la cattura, non caricata dalla galleria. Non è una prova assoluta, ma è un buon segnale che la foto sia autentica.</p>
   </div>
-
 </main>
 
 <footer>

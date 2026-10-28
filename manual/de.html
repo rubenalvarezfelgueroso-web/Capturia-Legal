@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="capturia-manual-version" content="2026-10-19">
+<meta name="capturia-manual-version" content="2026-10-28">
 <title>Capturia-Benutzerhandbuch</title>
 <style>
   :root {
@@ -137,15 +137,14 @@
 
 <header>
   <h1>🎣 Capturia-Benutzerhandbuch</h1>
-  <p>Aktualisiert am 28. September 2026</p>
+  <p>Aktualisiert am 28. Oktober 2026</p>
   <nav class="idiomas"><a href="es.html" hreflang="es">Español</a> <a href="en.html" hreflang="en">English</a> <a href="fr.html" hreflang="fr">Français</a> <a href="it.html" hreflang="it">Italiano</a> <a href="pt.html" hreflang="pt">Português</a> <a href="de.html" hreflang="de" class="activo">Deutsch</a> <a href="ar.html" hreflang="ar">العربية</a></nav>
 </header>
 
 <!-- Contenido del manual (alemán): la app lo descarga y muestra este <main> dentro de su propia pantalla
      (con copia guardada para leerlo sin conexión). Generado a partir del manual en Claude Docs. -->
 <main id="contenido-manual">
-
-  <div class="tarjeta">
+<div class="tarjeta">
     <h2 id="indice">Inhalt</h2>
     <ul class="indice">
       <li><a href="#bienvenida">Willkommen</a></li>
@@ -207,6 +206,7 @@
     <p>Tippe unter Fänge auf <strong>+🎣</strong> neben der Suche (oder auf Halleluja! in der unteren Leiste), um einen Fisch zu erfassen. Du kannst hinzufügen:</p>
     <ul>
       <li><strong>Art</strong> und <strong>Angelplatz</strong> (Pflichtfelder), <strong>Gewicht</strong> und <strong>Länge</strong>.</li>
+      <li><strong>Mindestmaß</strong>: Sind Art und Angelplatz gewählt, siehst du unter der Länge das Mindestmaß dieses Gebiets, rot, wenn dein Fisch darunter liegt (siehe Arten).</li>
       <li><strong>Fotos oder Video</strong> des Fangs.</li>
       <li><strong>Mehrfachfang</strong>: Wenn du mehrere Fische auf einmal gefangen hast, erfasse sie als einen Eintrag; dann gibst du statt der Länge die <strong>Anzahl</strong> an.</li>
       <li><strong>Kunstköder und Naturköder</strong> (unter der Anzahl bzw. Länge): wähle die verwendeten aus deiner Ausrüstungsliste. Beides ist optional; hast du noch keine angelegt, weist dich das Feld darauf hin, das unter Ausrüstung zu tun.</li>
@@ -232,8 +232,24 @@
   </div>
   <div class="tarjeta">
     <h2 id="especies">Arten</h2>
-    <p>Der Bildschirm Arten zeigt <strong>deinen Katalog</strong>: die Arten auf deinem Handy (die fünf vom Start, die du aus dem offiziellen Katalog hinzufügst, und die du selbst anlegst). Er wird je nach Einstellungen manuell oder automatisch mit deiner Kopie in der Cloud abgeglichen. Den vollständigen <strong>offiziellen Katalog</strong> von Capturia, mit einem ungefähren Mindestmaß, findest du auf einem eigenen Bildschirm (ab dem Plus-Tarif); von dort aus fügst du Arten zu deinem hinzu.</p>
-    <p>Nutze die <strong>Lupe</strong> neben „Alle Arten“, um nach deutschem oder wissenschaftlichem Namen zu suchen. Tippe auf eine Karte, um <strong>Art ansehen</strong> zu öffnen: Oben findest du <strong>Bearbeiten</strong>, <strong>Löschen</strong> und das Symbol, um sie an einen Angelfreund zu senden. Beim Löschen einer Art erscheint derselbe Hinweis wie bei Angelplätzen und Fängen, mit der Option, sie auch aus der Cloud zu löschen; mit erfassten Fängen kann sie nicht gelöscht werden. Bei Arten aus dem offiziellen Katalog kannst du nur das Foto ändern (dein persönliches Foto).</p>
+    <p>Der Bildschirm Arten zeigt <strong>deinen Katalog</strong>: die Arten auf deinem Handy (die fünf vom Start, die du aus der öffentlichen Liste hinzufügst, und die du selbst anlegst). Jede Karte zeigt das Foto, den Typ, wie viele Fänge du hast und das <strong>Mindestmaß für dein Gebiet</strong>. Er wird je nach Einstellungen manuell oder automatisch mit deiner Kopie in der Cloud abgeglichen.</p>
+    <p>Nutze die <strong>Lupe</strong> neben „Alle Arten“, um nach deutschem oder wissenschaftlichem Namen zu suchen. Tippe auf eine Karte, um <strong>Art ansehen</strong> zu öffnen: Oben findest du <strong>Bearbeiten</strong>, <strong>Löschen</strong> und das Symbol zum Senden an einen Angelfreund. Beim Löschen einer Art erscheint derselbe Hinweis wie bei Angelplätzen und Fängen, mit der Option, sie auch in der Cloud zu löschen. Hat sie Fänge, werden diese mitgelöscht: Die App sagt dir, wie viele, und bittet dich, das Bestätigungswort einzugeben.</p>
+    <h3>Öffentliche Artenliste (offizieller Katalog)</h3>
+    <p>Das ist der offizielle Katalog von Capturia, vom Team geprüft und mit einem Foto jeder Art. Du findest ihn im Menü (☰) &gt; Daten &gt; <strong>🐟 Öffentliche Artenliste</strong>, ab dem Plus-Tarif.</p>
+    <ul>
+      <li><strong>Gebiet</strong>: Die Liste wird nach Gebieten gefiltert (Europäischer Atlantik, Kantabrisches Meer, Mittelmeer …). Beim Öffnen ist deins ausgewählt; du kannst ein anderes oder „Alle Zonen“ wählen. Außerdem kannst du nach Namen suchen und nach Typ filtern.</li>
+      <li><strong>Mehr Infos</strong>: Tippe auf den Namen einer Art (oder den Pfeil ▾), um ihre Karte aufzuklappen, mit großem Foto, Namen, wissenschaftlichem Namen, Typ, Lebensraum und Mindestmaß. <strong>📖 Mehr erfahren</strong> öffnet das vollständige Porträt: Eckdaten, Erkennungsmerkmale, Lebensraum, Nahrung, Fortpflanzung, Angeltipps und eine Kuriosität. Gibt es noch kein Porträt, ist die Schaltfläche abgeblendet.</li>
+      <li><strong>Zu deinem Katalog hinzufügen</strong>: Tippe auf ⊕. Du bekommst deine eigene Kopie, die du jederzeit bearbeiten oder entfernen kannst. Arten, die du schon hast, erscheinen nicht; schalte „Auch die anzeigen, die ich schon habe“ ein, um sie mit ✓ zu sehen.</li>
+    </ul>
+    <p><strong>Offizielle Art oder eigene?</strong> Wenn die Art in der öffentlichen Liste steht, füge sie von dort hinzu: Sie kommt mit Foto, Namen in deiner Sprache, wissenschaftlichem Namen und Mindestmaßen pro Gebiet, die das Capturia-Team aktuell hält. Lege nur dann selbst eine an, wenn sie fehlt; machst du sie öffentlich, schlägst du sie für den Katalog vor und das Team prüft sie. Wählst du in einem Fang eine offizielle Art (auch mit Welcher Fisch ist das?), kommt sie automatisch in deinen Katalog, ohne Doppelung, falls du sie schon hattest. Ändert der Katalog das Foto einer Art, die du hast, bietet dir das Bearbeiten <strong>Offizielles Foto verwenden</strong> an: Dein Foto wird nie geändert, wenn du es nicht selbst wählst.</p>
+    <h3>Mindestmaß je nach Gebiet</h3>
+    <p>Dieselbe Art kann je nach Fangort unterschiedliche Mindestmaße haben (zum Beispiel die Achselfleckbrasse: 17 cm allgemein und 25 cm im Kantabrischen Meer). Deshalb haben offizielle Arten ein Maß pro Gebiet, und das Porträt <strong>Mehr erfahren</strong> zeigt alle, deins hervorgehoben.</p>
+    <ul>
+      <li><strong>Dein Gebiet</strong> ergibt sich aus Land und Region, die du am Anfang gewählt hast. Du änderst es unter Einstellungen &gt; <strong>Mein Angelgebiet</strong>.</li>
+      <li><strong>In einem Fang</strong> siehst du unter der Länge das Mindestmaß des gewählten Angelplatzes (sein Gebiet wird aus seinem Standort berechnet). Liegen Länge oder Gewicht darunter, wird der Hinweis rot.</li>
+      <li>Das Gebiet wird auf deinem Handy berechnet und nirgendwohin gesendet.</li>
+    </ul>
+    <p>Die Maße sind nur Richtwerte: Prüfe immer die geltenden Vorschriften in deinem Gebiet. Selbst angelegte Arten haben nur ein Maß, das du eingibst.</p>
     <p>Wie viele Arten du in deinem Katalog haben kannst, hängt von deinem Tarif ab (siehe Tarife). Die Namen des offiziellen Katalogs werden in deiner Sprache angezeigt, wenn es eine Übersetzung gibt; Arten, die du selbst anlegst, erscheinen so, wie du sie geschrieben hast.</p>
   </div>
   <div class="tarjeta">
@@ -299,6 +315,7 @@
       <li><strong>Farben anpassen</strong>: Farbe der Kopfzeile und der unteren Leiste, Symbole der Leiste in Weiß oder Schwarz (alle Tarife) und Farbe der Karten (ab Plus). „Originalfarben wiederherstellen“ stellt die ursprünglichen Farben wieder her.</li>
       <li><strong>Hintergrund der App</strong>: vorgefertigte Hintergründe oder eine Farbe (ab Plus) oder dein eigenes Foto aus Kamera oder Galerie (ab Premium). Die vorgefertigten Hintergründe stammen von Pixabay.</li>
       <li><strong>Automatischer Upload</strong> in die Cloud (ab Plus). Wenn du ihn nicht aktivierst, kannst du deine Kopie über das Seitenmenü &gt; Werkzeuge oder vom Startbildschirm aus von Hand sichern und wiederherstellen.</li>
+      <li><strong>Mein Angelgebiet</strong>: das Gebiet, nach dem die Mindestmaße angezeigt werden. Standardmäßig „Automatisch“, nach Land und Region, die du am Anfang gewählt hast. Wird nur auf diesem Handy gespeichert.</li>
     </ul>
     <p><strong>Benachrichtigungen</strong>: Sie haben eine eigene Karte in den Einstellungen (zum Aufklappen antippen), mit einem <strong>Hauptschalter</strong> und darunter einem Schalter pro Benachrichtigungsart. Alles ist standardmäßig an. Dein Handy meldet sich, auch wenn Capturia geschlossen ist, wenn <strong>deine beste Angelzeit beginnt</strong> (Tage mit 3★ oder mehr an deinem Hauptplatz der Vorhersage; alle Abos) und ab Plus, wenn dir ein Angelfreund etwas sendet (Fang, Platz, Art oder großer Biss), du eine private Notiz oder ein Treffen bekommst, dich jemand als Angelfreund hinzufügt oder in eine Gruppe einlädt oder eine deiner Arten geprüft wird. Ab Plus wählst du, welche dieser Benachrichtigungen du willst; diese Auswahl wird in deinem Konto gespeichert und gilt für alle deine Handys. <strong>Wenn du den Hauptschalter ausschaltest, bekommst du keinen Hinweis mehr</strong>, auch nicht den zur besten Angelzeit. Nach dem Abmelden erhält dieses Handy keine mehr.</p>
   </div>
@@ -313,7 +330,6 @@
     <p><strong>Kann ich Capturia ohne Verbindung nutzen?</strong> Ja, um deine Daten zu erfassen und anzusehen. Der Abgleich mit der Cloud (Uploads, Sicherungen und ausstehende Löschungen) erfolgt automatisch, sobald die Verbindung wieder da ist.</p>
     <p><strong>Was bedeutet das ✅ auf einem Foto?</strong> Dass das Foto beim Erfassen des Fangs mit der Kamera aus Capturia aufgenommen und nicht aus der Galerie hochgeladen wurde. Das ist kein absoluter Beweis, aber ein gutes Zeichen dafür, dass das Foto echt ist.</p>
   </div>
-
 </main>
 
 <footer>
