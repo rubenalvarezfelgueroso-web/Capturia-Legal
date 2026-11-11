@@ -225,6 +225,7 @@
       <li><strong>Fotos verificadas:</strong> un indicador (sí/no) de si cada foto de una captura se hizo con la cámara desde la propia app, para mostrar el sello de verificación.</li>
       <li><strong>Identificación de especies («¿Qué pez es?»):</strong> si usas esta función, la foto que eliges se envía, reducida y sin metadatos (EXIF), a nuestro proveedor de inteligencia artificial para que proponga la especie, junto con tu país, tu comunidad o región y el tipo de agua que indicaste en tu perfil, para afinar el resultado. Para darte la <strong>talla mínima orientativa</strong> de tu zona también se envía, si está disponible, una <strong>ubicación aproximada</strong> (la del sitio de la captura o, solo si ya diste permiso de ubicación a la app, la del móvil en ese momento), redondeada a unos 1 km. Ni la foto ni esa ubicación se guardan en nuestros servidores ni en los del proveedor una vez analizadas, y no se usan para entrenar modelos. De cada uso solo guardamos la fecha y la especie propuesta, para controlar el número de identificaciones de tu plan.</li>
       <li><strong>Previsión de pesca:</strong> para calcular la previsión de un sitio, nuestro servidor consulta el tiempo, las mareas y el estado del mar enviando solo las coordenadas de ese sitio al servicio meteorológico Open-Meteo, sin tu nombre, tu correo ni ningún identificador tuyo. Con el plan Premium, la previsión tiene en cuenta además las horas de tus capturas en ese sitio; ese cálculo se hace en tu propio móvil y tus capturas no se envían a nadie por ello. El último sitio consultado se recuerda solo en tu dispositivo.</li>
+      <!-- alertas-condiciones --><li><strong>Alertas de condiciones (plan Premium):</strong> si creas una alerta en uno de tus sitios, guardamos en nuestro servidor el nombre de la alerta, las condiciones que eliges y el nombre y las coordenadas de ese sitio, aunque no tengas activada la copia en la nube. Cada 6 horas nuestro servidor consulta con esas coordenadas la previsión en Open-Meteo (sin ningún dato que te identifique) y, si se cumplen las condiciones, te envía una notificación y guarda el aviso con los datos de la previsión de ese tramo. Puedes pausar, editar o eliminar tus alertas cuando quieras.</li>
       <li><strong>Prueba gratuita de Plus:</strong> si la activas, guardamos la fecha de inicio y fin y un <strong>identificador del dispositivo cifrado</strong> (un resumen irreversible del identificador que el sistema asigna a la app en tu móvil; nunca el identificador en claro), solo para impedir que la prueba se repita en el mismo móvil con otras cuentas. Base legal: interés legítimo en prevenir abusos (art. 6.1.f RGPD). Se conserva mientras se ofrezca la prueba y, como máximo, hasta que pidas la eliminación de tu cuenta.</li>
     </ul>
 
@@ -254,6 +255,7 @@
         <tr><td>Gestionar tus compañeros y las solicitudes de compañero</td><td>Ejecución del contrato (art. 6.1.b)</td></tr>
         <tr><td>Mostrar tu zona (país y ciudad) en las búsquedas de otros usuarios</td><td>Consentimiento, al rellenarla y tener activado "Visible para otros usuarios" (art. 6.1.a)</td></tr>
         <tr><td>Guardar una copia sin fotos de las capturas en «Pública (mapa)» o «Compañeros y pública» (especie, peso o cantidad, ubicación, fecha y hora) y mostrar estadísticas anónimas por zonas en el mapa de Capturas públicas</td><td>Interés legítimo en ofrecer a la comunidad estadísticas de pesca agregadas y anónimas (art. 6.1.f); puedes oponerte escribiéndonos</td></tr>
+        <tr><td>Comprobar tus alertas de condiciones y avisarte cuando se cumplen (plan Premium)</td><td>Ejecución del contrato (art. 6.1.b)</td></tr>
       </tbody>
     </table>
   </div>
@@ -263,6 +265,7 @@
     <p>Por defecto, en el <strong>plan Gratuito</strong>, tus especies, sitios, capturas y bolos se guardan únicamente en tu dispositivo (base de datos local), y no llegan a nuestros servidores.</p>
     <p>A partir del <strong>plan Plus</strong>, si activas la copia de seguridad en la nube, esos datos (además de tu perfil y tu cuenta, que sí existen desde el registro) se guardan en servidores de <strong>Supabase</strong> ubicados en el Reino Unido (Londres). Las capturas en «Compañeros» o «Compañeros y pública» se guardan en la nube en cualquier caso, para que tus compañeros puedan verlas; de las que están en «Pública (mapa)» solo se envían sus datos, sin fotos ni vídeo.</p>
     <p>Además, de cada captura en «Pública (mapa)» o «Compañeros y pública», Capturia guarda en esos mismos servidores una copia sin fotos ni vídeo, con su especie, peso o cantidad, ubicación, fecha y hora, para el mapa de Capturas públicas (ver apartado 2).</p>
+    <!-- alertas-almacen --><p>Si creas una <strong>alerta de condiciones</strong> (plan Premium), el nombre y las coordenadas de ese sitio se guardan también en esos servidores, aunque no tengas activada la copia en la nube (ver apartado 2).</p>
   </div>
 
   <div class="tarjeta" id="terceros">
@@ -287,6 +290,7 @@
     <p>Las <strong>notas privadas</strong> se borran automáticamente 7 días después de leerse, o a los 30 días si no se llegan a leer. Las <strong>quedadas</strong>, con su lista de invitados y respuestas, se borran automáticamente 3 días después de su fecha (o antes, si quien la organiza la cancela). El destinatario también puede borrar en cualquier momento una nota que haya recibido.</p>
     <p>Puedes eliminar tu cuenta desde la propia app (Mi perfil → Eliminar mi cuenta) o por email. <a href="eliminar-cuenta/">Cómo eliminar tu cuenta</a>.</p>
     <p>La <strong>copia de las capturas públicas</strong> para el mapa de la comunidad (apartado 2) se conserva aunque borres la captura o la vuelvas privada. Si eliminas tu cuenta, deja de estar vinculada a ti y queda totalmente anónima. Si prefieres que borremos tus aportaciones antes, escríbenos a capturiaSpain@gmail.com y las eliminaremos.</p>
+    <p>Las <strong>alertas de condiciones</strong>, con el nombre y las coordenadas del sitio, se conservan hasta que elimines la alerta o tu cuenta. Una alerta caducada (cada una dura 1 mes si no la renuevas) deja de comprobarse, pero sigue guardada hasta que la elimines. Los avisos que te enviamos se borran al eliminar tu cuenta.</p>
   </div>
 
   <div class="tarjeta" id="derechos">

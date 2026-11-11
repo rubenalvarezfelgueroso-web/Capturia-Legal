@@ -225,6 +225,7 @@
       <li><strong>Verified photos:</strong> a yes/no flag indicating whether each catch photo was taken with the camera from within the app, used to show the verification badge.</li>
       <li><strong>Species identification (“What fish is it?”):</strong> if you use this feature, the photo you choose is sent, resized and without metadata (EXIF), to our artificial intelligence provider so it can suggest the species, together with your country, your region and the type of water you set in your profile, to refine the result. To give you the <strong>approximate minimum size</strong> for your area, an <strong>approximate location</strong> is also sent if available (that of the catch spot or, only if you have already given the app location permission, that of your phone at that moment), rounded to about 1 km. Neither the photo nor that location is stored on our servers or the provider's once analysed, and they are not used to train models. For each use we only store the date and the suggested species, to keep track of the number of identifications in your plan.</li>
       <li><strong>Fishing forecast:</strong> to calculate the forecast for a spot, our server looks up the weather, tides and sea state by sending only the coordinates of that spot to the weather service Open-Meteo, without your name, your email or any identifier of yours. With the Premium plan, the forecast also takes into account the times of your catches at that spot; this calculation is done on your own phone and your catches are not sent to anyone for it. The last spot you checked is remembered only on your device.</li>
+      <!-- alertas-condiciones --><li><strong>Condition alerts (Premium plan):</strong> if you create an alert on one of your spots, we store on our server the alert's name, the conditions you choose and that spot's name and coordinates, even if you haven't turned on cloud backup. Every 6 hours our server uses those coordinates to check the forecast with Open-Meteo (without any data that identifies you) and, if the conditions are met, sends you a notification and stores the alert with the forecast data for that time window. You can pause, edit or delete your alerts whenever you like.</li>
       <li><strong>Free Plus trial:</strong> if you activate it, we store its start and end dates and an <strong>encrypted device identifier</strong> (an irreversible digest of the identifier the system assigns to the app on your phone; never the identifier itself), only to prevent the trial from being repeated on the same phone with other accounts. Legal basis: legitimate interest in preventing abuse (Art. 6(1)(f) GDPR). It is kept while the trial is offered and, at most, until you ask for your account to be deleted.</li>
     </ul>
 
@@ -254,6 +255,7 @@
         <tr><td>Managing your companions and companion requests</td><td>Performance of the contract (Art. 6(1)(b))</td></tr>
         <tr><td>Showing your area (country and city) in other users' searches</td><td>Consent, by filling it in and having "Visible to other users" turned on (Art. 6(1)(a))</td></tr>
         <tr><td>Keeping a copy without photos of catches set to "Public (map)" or "Buddies and public" (species, weight or quantity, location, date and time) and showing anonymous statistics by area on the Public catches map</td><td>Legitimate interest in offering the community aggregated, anonymous fishing statistics (art. 6.1.f); you can object by writing to us</td></tr>
+        <tr><td>Checking your condition alerts and notifying you when they are met (Premium plan)</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
       </tbody>
     </table>
   </div>
@@ -263,6 +265,7 @@
     <p>By default, on the <strong>Free plan</strong>, your species, spots, catches and blank days are stored only on your device (local database) and never reach our servers.</p>
     <p>From the <strong>Plus plan</strong>, if you enable cloud backup, that data (in addition to your profile and account, which exist from registration) is stored on <strong>Supabase</strong> servers located in the United Kingdom (London). Catches set to "Buddies" or "Buddies and public" are stored in the cloud in any case, so that your companions can see them; for catches set to "Public (map)" only their data is sent, without photos or video.</p>
     <p>In addition, for every catch set to "Public (map)" or "Buddies and public", Capturia keeps a copy without photos or video, with its species, weight or quantity, location, date and time, on those same servers for the Public catches map (see section 2).</p>
+    <!-- alertas-almacen --><p>If you create a <strong>condition alert</strong> (Premium plan), that spot's name and coordinates are also stored on those servers, even if you haven't turned on cloud backup (see section 2).</p>
   </div>
 
   <div class="tarjeta" id="terceros">
@@ -287,6 +290,7 @@
     <p><strong>Private notes</strong> are deleted automatically 7 days after being read, or after 30 days if they are never read. <strong>Meetups</strong>, together with their guest list and answers, are deleted automatically 3 days after their date (or earlier if the organiser cancels them). Recipients can also delete a note they have received at any time.</p>
     <p>You can delete your account from within the app (My profile → Delete my account) or by email. <a href="../eliminar-cuenta/en/">How to delete your account</a>.</p>
     <p>The <strong>copy of public catches</strong> for the community map (section 2) is kept even if you delete the catch or make it private. If you delete your account, it is no longer linked to you and becomes fully anonymous. If you would rather we delete your contributions sooner, write to capturiaSpain@gmail.com and we will remove them.</p>
+    <p><strong>Condition alerts</strong>, with the spot's name and coordinates, are kept until you delete the alert or your account. An expired alert (each lasts 1 month unless you renew it) is no longer checked, but stays stored until you delete it. The notifications we send you are deleted when you delete your account.</p>
   </div>
 
   <div class="tarjeta" id="derechos">
