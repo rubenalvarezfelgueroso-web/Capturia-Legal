@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Política de privacidad · Capturia</title>
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <style>
   :root {
     --color-fondo: #f7f1e1;
@@ -143,7 +145,7 @@
 
 <header>
   <h1>🎣 Política de privacidad de Capturia</h1>
-  <p>Última actualización: 11 de noviembre de 2026</p>
+  <p>Última actualización: 19 de noviembre de 2026</p>
   <nav class="idiomas"><strong>Español</strong> <a href="en/" hreflang="en">English</a> <a href="fr/" hreflang="fr">Français</a> <a href="it/" hreflang="it">Italiano</a> <a href="pt/" hreflang="pt">Português</a> <a href="de/" hreflang="de">Deutsch</a> <a href="ar/" hreflang="ar">العربية</a></nav>
 </header>
 
@@ -177,7 +179,7 @@
     <h2>1. Responsable del tratamiento</h2>
     <p>
       <strong>Rubén Álvarez Felgueroso</strong>, desarrollador de Capturia, es quien decide qué datos se tratan y con qué finalidad.<br>
-      Contacto: <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>
+      Contacto: <a href="mailto:soporte@capturia.es">soporte@capturia.es</a>
     </p>
     <p class="nota">Al ser una app de un desarrollador individual, no existe una figura de Delegado de Protección de Datos (no es obligatoria para este tipo de tratamiento).</p>
   </div>
@@ -188,7 +190,8 @@
     <h3>Cuenta y perfil</h3>
     <ul>
       <li><strong>Registro:</strong> correo electrónico y contraseña, o bien tu cuenta de Google o de Apple, si eliges "Iniciar sesión con Google" o "Iniciar sesión con Apple". Si al iniciar sesión con Apple eliges ocultar tu correo, solo recibimos la dirección de reenvío anónima que te asigna Apple, no tu correo real. La contraseña nunca la vemos nosotros: la gestiona de forma cifrada nuestro proveedor de autenticación, Supabase.</li>
-      <li><strong>Perfil público:</strong> nombre de usuario, foto de avatar, una breve descripción y los enlaces que decidas añadir tú mismo en "Mis enlaces".</li>
+      <li><strong>Perfil público:</strong> nombre de usuario, foto de avatar y los enlaces que decidas añadir tú mismo en "Mis enlaces".</li>
+      <li><strong>Tipo de pescador:</strong> la modalidad con la que pescas (costa, río, embarcación o submarina) y, si quieres, otras más. La eliges al crear la cuenta y puedes cambiarla en "Mi perfil". Sirve para adaptar el formulario de las capturas a tu forma de pescar.</li>
       <li><strong>Mi zona:</strong> si la rellenas en "Mi perfil", el país y la ciudad de los que eres. Sirve para que otros pescadores te encuentren con "Buscar por zona" en Compañeros, y solo se muestra si tienes activado "Visible para otros usuarios" en Ajustes. Es opcional y puedes borrarla cuando quieras.</li>
       <li><strong>Plan de suscripción</strong> (Gratuito/Plus/Premium) y plataforma desde la que usas la app (Android/iOS/web), para poder darte soporte y para estadísticas internas de uso.</li>
     </ul>
@@ -224,8 +227,8 @@
       <li><strong>Notificaciones:</strong> solo si las activas en Ajustes, un identificador del móvil generado por Firebase Cloud Messaging (servicio de Google), asociado a tu cuenta, que sirve únicamente para enviarte los avisos. Se borra al desactivarlas, al cerrar sesión en ese móvil o al eliminar tu cuenta.</li>
       <li><strong>Fotos verificadas:</strong> un indicador (sí/no) de si cada foto de una captura se hizo con la cámara desde la propia app, para mostrar el sello de verificación.</li>
       <li><strong>Identificación de especies («¿Qué pez es?»):</strong> si usas esta función, la foto que eliges se envía, reducida y sin metadatos (EXIF), a nuestro proveedor de inteligencia artificial para que proponga la especie, junto con tu país, tu comunidad o región y el tipo de agua que indicaste en tu perfil, para afinar el resultado. Para darte la <strong>talla mínima orientativa</strong> de tu zona también se envía, si está disponible, una <strong>ubicación aproximada</strong> (la del sitio de la captura o, solo si ya diste permiso de ubicación a la app, la del móvil en ese momento), redondeada a unos 1 km. Ni la foto ni esa ubicación se guardan en nuestros servidores ni en los del proveedor una vez analizadas, y no se usan para entrenar modelos. De cada uso solo guardamos la fecha y la especie propuesta, para controlar el número de identificaciones de tu plan.</li>
-      <li><strong>Previsión de pesca:</strong> para calcular la previsión de un sitio, nuestro servidor consulta el tiempo, las mareas y el estado del mar enviando solo las coordenadas de ese sitio al servicio meteorológico Open-Meteo, sin tu nombre, tu correo ni ningún identificador tuyo. Con el plan Premium, la previsión tiene en cuenta además las horas de tus capturas en ese sitio; ese cálculo se hace en tu propio móvil y tus capturas no se envían a nadie por ello. El último sitio consultado se recuerda solo en tu dispositivo.</li>
-      <!-- alertas-condiciones --><li><strong>Alertas de condiciones (plan Premium):</strong> si creas una alerta en uno de tus sitios, guardamos en nuestro servidor el nombre de la alerta, las condiciones que eliges y el nombre y las coordenadas de ese sitio, aunque no tengas activada la copia en la nube. Cada 6 horas nuestro servidor consulta con esas coordenadas la previsión en Open-Meteo (sin ningún dato que te identifique) y, si se cumplen las condiciones, te envía una notificación y guarda el aviso con los datos de la previsión de ese tramo. Puedes pausar, editar o eliminar tus alertas cuando quieras.</li>
+      <li><strong>Previsión de pesca:</strong> para calcular la previsión de un sitio, nuestro servidor consulta el tiempo, las mareas y el estado del mar enviando solo las coordenadas de ese sitio al servicio meteorológico Stormglass, sin tu nombre, tu correo ni ningún identificador tuyo. Con el plan Premium, la previsión tiene en cuenta además las horas de tus capturas en ese sitio; ese cálculo se hace en tu propio móvil y tus capturas no se envían a nadie por ello. El último sitio consultado se recuerda solo en tu dispositivo.</li>
+      <!-- alertas-condiciones --><li><strong>Alertas de condiciones (plan Premium):</strong> si creas una alerta en uno de tus sitios, guardamos en nuestro servidor el nombre de la alerta, las condiciones que eliges y el nombre y las coordenadas de ese sitio, aunque no tengas activada la copia en la nube. Cada 6 horas nuestro servidor consulta con esas coordenadas la previsión en Stormglass (sin ningún dato que te identifique) y, si se cumplen las condiciones, te envía una notificación y guarda el aviso con los datos de la previsión de ese tramo. Puedes pausar, editar o eliminar tus alertas cuando quieras.</li>
       <li><strong>Prueba gratuita de Plus:</strong> si la activas, guardamos la fecha de inicio y fin y un <strong>identificador del dispositivo cifrado</strong> (un resumen irreversible del identificador que el sistema asigna a la app en tu móvil; nunca el identificador en claro), solo para impedir que la prueba se repita en el mismo móvil con otras cuentas. Base legal: interés legítimo en prevenir abusos (art. 6.1.f RGPD). Se conserva mientras se ofrezca la prueba y, como máximo, hasta que pidas la eliminación de tu cuenta.</li>
     </ul>
 
@@ -266,6 +269,7 @@
     <p>A partir del <strong>plan Plus</strong>, si activas la copia de seguridad en la nube, esos datos (además de tu perfil y tu cuenta, que sí existen desde el registro) se guardan en servidores de <strong>Supabase</strong> ubicados en el Reino Unido (Londres). Las capturas en «Compañeros» o «Compañeros y pública» se guardan en la nube en cualquier caso, para que tus compañeros puedan verlas; de las que están en «Pública (mapa)» solo se envían sus datos, sin fotos ni vídeo.</p>
     <p>Además, de cada captura en «Pública (mapa)» o «Compañeros y pública», Capturia guarda en esos mismos servidores una copia sin fotos ni vídeo, con su especie, peso o cantidad, ubicación, fecha y hora, para el mapa de Capturas públicas (ver apartado 2).</p>
     <!-- alertas-almacen --><p>Si creas una <strong>alerta de condiciones</strong> (plan Premium), el nombre y las coordenadas de ese sitio se guardan también en esos servidores, aunque no tengas activada la copia en la nube (ver apartado 2).</p>
+    <p><strong>Mis documentos</strong> (licencias, seguros y otros papeles que guardes en la app) se quedan solo en tu móvil: nunca se suben a la nube, no se incluyen en la copia de seguridad y no se pueden compartir.</p>
   </div>
 
   <div class="tarjeta" id="terceros">
@@ -279,7 +283,8 @@
       <li><strong>Google (Firebase Cloud Messaging)</strong>, solo si activas las notificaciones: recibe el identificador del móvil y el texto del aviso (por ejemplo, «Pepe te ha enviado una captura»), nunca el contenido de lo enviado. Empresa con sede en Estados Unidos.</li>
       <li><strong>Anthropic</strong> (inteligencia artificial Claude), solo cuando usas «¿Qué pez es?»: recibe la foto que quieres identificar, sin metadatos, la zona de pesca de tu perfil (país, región y tipo de agua) y, si está disponible, una ubicación aproximada (redondeada a unos 1 km) para la talla mínima orientativa; nunca tu nombre ni tu correo. No conserva la foto ni la ubicación ni las usa para entrenar sus modelos. Empresa con sede en Estados Unidos.</li>
     </ul>
-    <p>También usamos <strong>Open-Meteo</strong> (servicio de datos meteorológicos y marinos) para la previsión de pesca y el relleno automático del tiempo y del mar: solo recibe, desde nuestro servidor, las coordenadas consultadas (las del sitio o, si lo eliges al rellenar el clima, tu ubicación actual) y las fechas, nunca datos que te identifiquen.</p>
+    <p>También usamos <strong>Stormglass</strong> (servicio de datos meteorológicos y marinos, con sede en Suecia, dentro de la UE) para la previsión de pesca y el relleno automático del tiempo y del mar: solo recibe, desde nuestro servidor, las coordenadas consultadas (las del sitio o, si lo eliges al rellenar el clima, tu ubicación actual) y las fechas, nunca datos que te identifiquen.</p>
+    <p>Los <strong>mapas</strong> de la app se cargan desde nuestro propio servidor (mapas.capturia.es, alojado en <strong>Cloudflare</strong>), con datos de OpenStreetMap. Para mostrarte el mapa, tu móvil solo pide las zonas que estás viendo; no se envía tu cuenta ni ningún otro dato personal, aparte de la dirección IP que cualquier conexión a internet necesita.</p>
     <p>Además, los mensajes de grupo, las notas privadas (incluido el teléfono o el correo que incluyas) y las quedadas se muestran a los usuarios a los que tú decides enviarlos. Ese envío lo haces tú; Capturia no comparte esos datos con nadie más.</p>
     <p>Cuando estos proveedores están fuera del Espacio Económico Europeo, la transferencia se realiza acogida a las garantías previstas en el RGPD. En concreto, nuestra base de datos (Supabase) está alojada en el Reino Unido, país que cuenta con una decisión de adecuación de la Comisión Europea: esto significa que se considera que ofrece un nivel de protección equivalente al de la UE, por lo que los datos pueden transferirse allí sin garantías adicionales. Para el resto de proveedores fuera de la UE/EEE (como RevenueCat, en Estados Unidos), la transferencia se ampara en las cláusulas contractuales tipo de la Comisión Europea.</p>
   </div>
@@ -289,7 +294,7 @@
     <p>Conservamos tus datos mientras mantengas tu cuenta activa. Si eliminas tu cuenta, borramos tu perfil y el contenido asociado a ella de nuestros servidores, salvo que la ley nos obligue a conservar algo (por ejemplo, por motivos contables o de resolución de conflictos) durante el plazo legalmente exigido.</p>
     <p>Las <strong>notas privadas</strong> se borran automáticamente 7 días después de leerse, o a los 30 días si no se llegan a leer. Las <strong>quedadas</strong>, con su lista de invitados y respuestas, se borran automáticamente 3 días después de su fecha (o antes, si quien la organiza la cancela). El destinatario también puede borrar en cualquier momento una nota que haya recibido.</p>
     <p>Puedes eliminar tu cuenta desde la propia app (Mi perfil → Eliminar mi cuenta) o por email. <a href="eliminar-cuenta/">Cómo eliminar tu cuenta</a>.</p>
-    <p>La <strong>copia de las capturas públicas</strong> para el mapa de la comunidad (apartado 2) se conserva aunque borres la captura o la vuelvas privada. Si eliminas tu cuenta, deja de estar vinculada a ti y queda totalmente anónima. Si prefieres que borremos tus aportaciones antes, escríbenos a capturiaSpain@gmail.com y las eliminaremos.</p>
+    <p>La <strong>copia de las capturas públicas</strong> para el mapa de la comunidad (apartado 2) se conserva aunque borres la captura o la vuelvas privada. Si eliminas tu cuenta, deja de estar vinculada a ti y queda totalmente anónima. Si prefieres que borremos tus aportaciones antes, escríbenos a soporte@capturia.es y las eliminaremos.</p>
     <p>Las <strong>alertas de condiciones</strong>, con el nombre y las coordenadas del sitio, se conservan hasta que elimines la alerta o tu cuenta. Una alerta caducada (cada una dura 1 mes si no la renuevas) deja de comprobarse, pero sigue guardada hasta que la elimines. Los avisos que te enviamos se borran al eliminar tu cuenta.</p>
   </div>
 
@@ -298,13 +303,13 @@
     <p>Como usuario de Capturia, en cualquier momento puedes ejercer tus derechos de:</p>
     <ul>
       <li><strong>Acceso:</strong> saber qué datos tuyos tratamos.</li>
-      <li><strong>Rectificación:</strong> corregir datos inexactos (muchos, como tu nombre visible o tu foto, puedes cambiarlos tú mismo desde "Mi perfil" y "Ajustes").</li>
+      <li><strong>Rectificación:</strong> corregir datos inexactos (muchos, como tu foto, tu zona o tu tipo de pescador, puedes cambiarlos tú mismo desde "Mi perfil" y "Ajustes"; el nombre de usuario, una vez elegido, solo podemos cambiarlo nosotros si nos lo pides).</li>
       <li><strong>Supresión:</strong> pedir que borremos tus datos.</li>
       <li><strong>Portabilidad:</strong> recibir tus datos en un formato reutilizable.</li>
       <li><strong>Oposición y limitación:</strong> oponerte a un tratamiento concreto o pedir que lo limitemos.</li>
     </ul>
-    <p><strong>Notas internas:</strong> el derecho de acceso incluye las notas internas que el equipo de Capturia haya podido guardar sobre tu cuenta. Puedes pedirnos en cualquier momento una copia, que las corrijamos o que las borremos escribiendo a <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a> desde el correo de tu cuenta, con el asunto «Notas internas».</p>
-    <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>. Responderemos en el plazo máximo de un mes.</p>
+    <p><strong>Notas internas:</strong> el derecho de acceso incluye las notas internas que el equipo de Capturia haya podido guardar sobre tu cuenta. Puedes pedirnos en cualquier momento una copia, que las corrijamos o que las borremos escribiendo a <a href="mailto:soporte@capturia.es">soporte@capturia.es</a> desde el correo de tu cuenta, con el asunto «Notas internas».</p>
+    <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:soporte@capturia.es">soporte@capturia.es</a>. Responderemos en el plazo máximo de un mes.</p>
     <p class="nota">Si consideras que no hemos atendido correctamente tu solicitud, puedes presentar una reclamación ante la autoridad de protección de datos del país de la UE o del EEE en el que residas, trabajes o se haya producido la supuesta infracción. En España es la <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Española de Protección de Datos (AEPD)</a>, que es también la autoridad del país en el que está establecido el responsable de Capturia. Puedes consultar la lista de autoridades de todos los países en la web del <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">Comité Europeo de Protección de Datos</a>.</p>
   </div>
 
@@ -314,7 +319,7 @@
     <p>El equipo de Capturia puede elegir otra foto para la versión oficial de una especie. Eso nunca cambia la foto de tu propia especie ni la de las copias de otros usuarios: si aparece una foto oficial nueva, cada persona decide si quiere usarla.</p>
     <p><strong>Metadatos de las fotos (EXIF).</strong> Las fotos del móvil pueden llevar dentro datos ocultos, como las coordenadas GPS de donde se hicieron, la fecha y hora exactas o el modelo del teléfono. Capturia los elimina en el momento de añadir una foto a la app (con la cámara o desde la galería), antes de guardarla en tu dispositivo o subirla a la nube, y también al compartir una foto desde la app con otras apps o redes sociales. La ubicación de una captura o de un sitio solo se guarda en sus propios campos, si tú la añades, y solo la ven otras personas si haces público ese contenido.</p>
     <p class="nota">Las fotos añadidas antes del 2 de octubre de 2026 pueden conservar estos metadatos en tu dispositivo o en tu copia en la nube; al compartirlas desde la app también se eliminan.</p>
-    <p class="nota">Las fotos de especies que proceden de fuentes externas (GBIF, iNaturalist, Wikimedia Commons) se usan según su licencia, indicando su autor en Acerca de Capturia &gt; Créditos.</p>
+    <p class="nota">Las fotos del catálogo oficial de especies son propias de Capturia.</p>
   </div>
 
   <div class="tarjeta" id="menores">
@@ -334,7 +339,7 @@
 
   <div class="tarjeta" id="contacto">
     <h2>12. Contacto</h2>
-    <p>Para cualquier duda sobre esta política o sobre tus datos, escríbenos a <a href="mailto:capturiaSpain@gmail.com">capturiaSpain@gmail.com</a>.</p>
+    <p>Para cualquier duda sobre esta política o sobre tus datos, escríbenos a <a href="mailto:soporte@capturia.es">soporte@capturia.es</a>.</p>
   </div>
 
 </main>
